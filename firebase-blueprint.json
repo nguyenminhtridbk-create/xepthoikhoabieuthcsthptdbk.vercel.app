@@ -1,0 +1,142 @@
+{
+  "entities": {
+    "Campus": {
+      "title": "Campus",
+      "description": "Điểm trường trong hệ thống 3 cơ sở của nhà trường",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Mã điểm trường (VD: campus_a)" },
+        "name": { "type": "string", "description": "Tên điểm trường (VD: Điểm trường A - Cơ sở chính)" },
+        "code": { "type": "string", "description": "Ký hiệu viết tắt (VD: CS1)" },
+        "address": { "type": "string", "description": "Địa chỉ cơ sở" },
+        "travelTimeMinutes": { "type": "number", "description": "Thời gian di chuyển trung bình tới cơ sở khác (phút)" },
+        "isMainCampus": { "type": "boolean", "description": "Là điểm trường trung tâm" }
+      },
+      "required": ["id", "name", "code"]
+    },
+    "Teacher": {
+      "title": "Teacher",
+      "description": "Thông tin giáo viên và phân công chuyên môn giảng dạy",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Mã giáo viên (UID hoặc mã Vietschool)" },
+        "fullName": { "type": "string", "description": "Họ và tên giáo viên" },
+        "code": { "type": "string", "description": "Mã viết tắt trên TKB (VD: NamNH)" },
+        "email": { "type": "string", "description": "Email công vụ giáo viên" },
+        "phone": { "type": "string", "description": "Số điện thoại liên lạc" },
+        "role": { "type": "string", "enum": ["admin", "head_of_department", "teacher"], "description": "Vai trò phân quyền" },
+        "department": { "type": "string", "description": "Tổ chuyên môn (VD: KHTN, Khoa học Xã hội, Toán - Tin)" },
+        "primaryCampusId": { "type": "string", "description": "Điểm trường công tác chính" },
+        "specialties": { "type": "array", "description": "Danh sách môn phụ trách (kể cả phân môn KHTN/LSĐL)" },
+        "maxPeriodsPerDay": { "type": "number", "description": "Số tiết tối đa trong 1 ngày (ràng buộc)" },
+        "preferredOffDay": { "type": "number", "description": "Thứ trong tuần ưu tiên nghỉ (2-7)" }
+      },
+      "required": ["id", "fullName", "code", "role"]
+    },
+    "Subject": {
+      "title": "Subject",
+      "description": "Môn học bao gồm môn chuẩn, liên môn KHTN/LSĐL THCS và chuyên đề/tự chọn THPT",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Mã môn học" },
+        "name": { "type": "string", "description": "Tên môn học" },
+        "gradeLevel": { "type": "string", "enum": ["THCS", "THPT", "ALL"] },
+        "category": { "type": "string", "enum": ["standard", "khtn_integrated", "lsdl_integrated", "thpt_elective", "thpt_chuyen_de"] },
+        "weeklyPeriods": { "type": "number", "description": "Số tiết chuẩn / tuần" },
+        "requiresSpecialRoom": { "type": "boolean", "description": "Yêu cầu phòng học bộ môn/chức năng" }
+      },
+      "required": ["id", "name", "gradeLevel", "category"]
+    },
+    "ClassRoom": {
+      "title": "ClassRoom",
+      "description": "Lớp học tại các khối 6-12",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Mã lớp (VD: 6A1, 10C2)" },
+        "name": { "type": "string", "description": "Tên lớp" },
+        "grade": { "type": "number", "description": "Khối lớp (6-12)" },
+        "campusId": { "type": "string", "description": "Điểm trường học tập" },
+        "shift": { "type": "string", "enum": ["morning", "afternoon"], "description": "Buổi học chính (Sáng/Chiều)" },
+        "homeroomTeacherId": { "type": "string", "description": "Giáo viên chủ nhiệm" },
+        "studentCount": { "type": "number", "description": "Sĩ số lớp" }
+      },
+      "required": ["id", "name", "grade", "campusId", "shift"]
+    },
+    "TeacherWeeklySchedule": {
+      "title": "TeacherWeeklySchedule",
+      "description": "Lịch thời khóa biểu theo giáo viên và tuần học để tối ưu chi phí đọc Firestore",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Khóa định danh dạng {teacherId}_w{weekNumber}" },
+        "teacherId": { "type": "string", "description": "ID giáo viên" },
+        "weekNumber": { "type": "number", "description": "Tuần học (1-35)" },
+        "termId": { "type": "string", "description": "Học kỳ (VD: HK1_2026_2027)" },
+        "totalPeriods": { "type": "number", "description": "Tổng số tiết dạy trong tuần" },
+        "slots": { "type": "array", "description": "Danh sách các tiết dạy trong tuần của GV" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "teacherId", "weekNumber", "termId", "slots"]
+    },
+    "TeachingReport": {
+      "title": "TeachingReport",
+      "description": "Sổ báo giảng điện tử và báo cáo giảng dạy tuần của giáo viên",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Mã báo cáo ({teacherId}_w{weekNumber})" },
+        "teacherId": { "type": "string", "description": "Mã giáo viên lập báo cáo" },
+        "weekNumber": { "type": "number", "description": "Tuần giảng dạy" },
+        "termId": { "type": "string", "description": "Mã kỳ học" },
+        "status": { "type": "string", "enum": ["draft", "submitted", "approved", "rejected"] },
+        "approvedBy": { "type": "string", "description": "UID người phê duyệt (PHT hoặc Tổ trưởng)" },
+        "entries": { "type": "array", "description": "Danh sách các tiết dạy, tên bài, đồ dùng dạy học" },
+        "submittedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "teacherId", "weekNumber", "status", "entries"]
+    },
+    "AppNotification": {
+      "title": "AppNotification",
+      "description": "Thông báo tự động gửi đến giáo viên về thay đổi thời khóa biểu hoặc báo giảng",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Mã thông báo" },
+        "teacherId": { "type": "string", "description": "ID giáo viên nhận thông báo" },
+        "title": { "type": "string", "description": "Tiêu đề thông báo" },
+        "message": { "type": "string", "description": "Nội dung thông báo chi tiết" },
+        "type": { "type": "string", "enum": ["schedule_update", "conflict_alert", "report_review", "urgent"] },
+        "isRead": { "type": "boolean", "description": "Đã đọc hay chưa" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "teacherId", "title", "message", "type"]
+    }
+  },
+  "firestore": {
+    "/terms/{termId}/teacher_schedules/{scheduleId}": {
+      "schema": { "$ref": "#/entities/TeacherWeeklySchedule" },
+      "description": "Lịch biểu gom nhóm theo từng giáo viên và tuần học trong học kỳ để tối ưu hóa truy vấn Firestore (1 lần đọc lấy toàn bộ tuần)"
+    },
+    "/terms/{termId}/teaching_reports/{reportId}": {
+      "schema": { "$ref": "#/entities/TeachingReport" },
+      "description": "Báo cáo sổ báo giảng giảng dạy hàng tuần cho giáo viên theo kỳ học"
+    },
+    "/campuses/{campusId}": {
+      "schema": { "$ref": "#/entities/Campus" },
+      "description": "Danh mục 3 điểm trường và cơ sở phòng chức năng"
+    },
+    "/teachers/{teacherId}": {
+      "schema": { "$ref": "#/entities/Teacher" },
+      "description": "Hồ sơ giáo viên, tổ chuyên môn và quyền hạn"
+    },
+    "/subjects/{subjectId}": {
+      "schema": { "$ref": "#/entities/Subject" },
+      "description": "Danh mục môn học, KHTN/LSĐL tích hợp THCS và chuyên đề/tự chọn THPT"
+    },
+    "/classes/{classId}": {
+      "schema": { "$ref": "#/entities/ClassRoom" },
+      "description": "Danh sách các lớp học tại 3 điểm trường"
+    },
+    "/notifications/{notificationId}": {
+      "schema": { "$ref": "#/entities/AppNotification" },
+      "description": "Hệ thống thông báo đẩy tự động theo thời gian thực tới giáo viên"
+    }
+  }
+}

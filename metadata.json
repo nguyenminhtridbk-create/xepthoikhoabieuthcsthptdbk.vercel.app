@@ -1,0 +1,6 @@
+{
+  "name": "Phần Mềm Xếp Thời Khóa Biểu 2 Cấp (THCS - THPT)",
+  "description": "Hệ thống chuyên dụng xếp thời khóa biểu 3 điểm trường, tối ưu tiết trống, linh hoạt KHTN - LS&ĐL THCS, chuyên đề & tự chọn THPT, báo cáo giảng dạy và chuẩn hóa VietSchool.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

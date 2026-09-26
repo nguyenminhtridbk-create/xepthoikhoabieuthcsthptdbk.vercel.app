@@ -1,0 +1,261 @@
+| **7A1** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Nguyễn Văn Ngoan | Ngoan.NV (7A1) |
+| **7A1** | Thứ 2 | Chiều | Tiết 2 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A1** | Thứ 2 | Chiều | Tiết 3 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A1** | Thứ 2 | Chiều | Tiết 4 | Âm nhạc | Lê Thị Tuyết Xanh | Xanh.LTT |
+| **7A1** | Thứ 2 | Chiều | Tiết 5 | Mỹ thuật | Huỳnh Thanh Dân | Dân.HT (8A6) |
+| **7A1** | Thứ 3 | Chiều | Tiết 1 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A1** | Thứ 3 | Chiều | Tiết 2 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A1** | Thứ 3 | Chiều | Tiết 3 | Toán học | Nguyễn Văn Ngoan | Ngoan.NV (7A1) |
+| **7A1** | Thứ 3 | Chiều | Tiết 4 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A1** | Thứ 3 | Chiều | Tiết 5 | Giáo dục thể chất | Lê Văn Nguyên | Nguyên.LV |
+| **7A1** | Thứ 4 | Chiều | Tiết 1 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A1** | Thứ 4 | Chiều | Tiết 2 | Toán học | Nguyễn Văn Ngoan | Ngoan.NV (7A1) |
+| **7A1** | Thứ 4 | Chiều | Tiết 3 | Toán học | Nguyễn Văn Ngoan | Ngoan.NV (7A1) |
+| **7A1** | Thứ 4 | Chiều | Tiết 4 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A1** | Thứ 4 | Chiều | Tiết 5 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A1** | Thứ 5 | Chiều | Tiết 1 | Tin học | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A1** | Thứ 5 | Chiều | Tiết 2 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A1** | Thứ 5 | Chiều | Tiết 3 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A1** | Thứ 5 | Chiều | Tiết 4 | Công nghệ | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A1** | Thứ 5 | Chiều | Tiết 5 | Giáo dục công dân | Nguyễn Thị Xe | Xe.NT |
+| **7A1** | Thứ 6 | Chiều | Tiết 1 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A1** | Thứ 6 | Chiều | Tiết 2 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A1** | Thứ 6 | Chiều | Tiết 3 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A1** | Thứ 6 | Chiều | Tiết 4 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A1** | Thứ 6 | Chiều | Tiết 5 | Giáo dục thể chất | Lê Văn Nguyên | Nguyên.LV |
+| **7A1** | Thứ 7 | Chiều | Tiết 1 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A1** | Thứ 7 | Chiều | Tiết 2 | Toán học | Nguyễn Văn Ngoan | Ngoan.NV (7A1) |
+| **7A1** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Nguyễn Văn Ngoan | Ngoan.NV (7A1) |
+| **7A1** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Nguyễn Văn Ngoan | Ngoan.NV (7A1) |
+| **7A2** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A2** | Thứ 2 | Chiều | Tiết 2 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A2** | Thứ 2 | Chiều | Tiết 3 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A2** | Thứ 2 | Chiều | Tiết 4 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A2** | Thứ 2 | Chiều | Tiết 5 | Mỹ thuật | Huỳnh Thanh Dân | Dân.HT (8A6) |
+| **7A2** | Thứ 3 | Chiều | Tiết 1 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A2** | Thứ 3 | Chiều | Tiết 2 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A2** | Thứ 3 | Chiều | Tiết 3 | Tin học | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A2** | Thứ 3 | Chiều | Tiết 4 | Âm nhạc | Lê Thị Tuyết Xanh | Xanh.LTT |
+| **7A2** | Thứ 3 | Chiều | Tiết 5 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A2** | Thứ 4 | Chiều | Tiết 1 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A2** | Thứ 4 | Chiều | Tiết 2 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A2** | Thứ 4 | Chiều | Tiết 3 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A2** | Thứ 4 | Chiều | Tiết 4 | Giáo dục thể chất | Lê Văn Nguyên | Nguyên.LV |
+| **7A2** | Thứ 4 | Chiều | Tiết 5 | Công nghệ | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A2** | Thứ 5 | Chiều | Tiết 1 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A2** | Thứ 5 | Chiều | Tiết 2 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A2** | Thứ 5 | Chiều | Tiết 3 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A2** | Thứ 5 | Chiều | Tiết 4 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A2** | Thứ 5 | Chiều | Tiết 5 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A2** | Thứ 6 | Chiều | Tiết 1 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A2** | Thứ 6 | Chiều | Tiết 2 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A2** | Thứ 6 | Chiều | Tiết 3 | Giáo dục thể chất | Lê Văn Nguyên | Nguyên.LV |
+| **7A2** | Thứ 6 | Chiều | Tiết 4 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A2** | Thứ 6 | Chiều | Tiết 5 | Giáo dục công dân | Nguyễn Thị Xe | Xe.NT |
+| **7A2** | Thứ 7 | Chiều | Tiết 1 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A2** | Thứ 7 | Chiều | Tiết 2 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A2** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A2** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A3** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A3** | Thứ 2 | Chiều | Tiết 2 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A3** | Thứ 2 | Chiều | Tiết 3 | Âm nhạc | Lê Thị Tuyết Xanh | Xanh.LTT |
+| **7A3** | Thứ 2 | Chiều | Tiết 4 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A3** | Thứ 2 | Chiều | Tiết 5 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A3** | Thứ 3 | Chiều | Tiết 1 | Giáo dục thể chất | Lê Văn Nguyên | Nguyên.LV |
+| **7A3** | Thứ 3 | Chiều | Tiết 2 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A3** | Thứ 3 | Chiều | Tiết 3 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A3** | Thứ 3 | Chiều | Tiết 4 | Tin học | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A3** | Thứ 3 | Chiều | Tiết 5 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A3** | Thứ 4 | Chiều | Tiết 1 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A3** | Thứ 4 | Chiều | Tiết 2 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A3** | Thứ 4 | Chiều | Tiết 3 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A3** | Thứ 4 | Chiều | Tiết 4 | Mỹ thuật | Huỳnh Thanh Dân | Dân.HT (8A6) |
+| **7A3** | Thứ 4 | Chiều | Tiết 5 | Giáo dục công dân | Nguyễn Thị Xe | Xe.NT |
+| **7A3** | Thứ 5 | Chiều | Tiết 1 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A3** | Thứ 5 | Chiều | Tiết 2 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A3** | Thứ 5 | Chiều | Tiết 3 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A3** | Thứ 5 | Chiều | Tiết 4 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A3** | Thứ 5 | Chiều | Tiết 5 | Công nghệ | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A3** | Thứ 6 | Chiều | Tiết 1 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A3** | Thứ 6 | Chiều | Tiết 2 | Giáo dục thể chất | Lê Văn Nguyên | Nguyên.LV |
+| **7A3** | Thứ 6 | Chiều | Tiết 3 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A3** | Thứ 6 | Chiều | Tiết 4 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A3** | Thứ 6 | Chiều | Tiết 5 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A3** | Thứ 7 | Chiều | Tiết 1 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A3** | Thứ 7 | Chiều | Tiết 2 | Ngữ văn | Lê Thị Hoài An | An.LTH |
+| **7A3** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A3** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A4** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A4** | Thứ 2 | Chiều | Tiết 2 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A4** | Thứ 2 | Chiều | Tiết 3 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A4** | Thứ 2 | Chiều | Tiết 4 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A4** | Thứ 2 | Chiều | Tiết 5 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A4** | Thứ 3 | Chiều | Tiết 1 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A4** | Thứ 3 | Chiều | Tiết 2 | Âm nhạc | Lê Thị Tuyết Xanh | Xanh.LTT |
+| **7A4** | Thứ 3 | Chiều | Tiết 3 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A4** | Thứ 3 | Chiều | Tiết 4 | Tin học | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A4** | Thứ 3 | Chiều | Tiết 5 | Giáo dục công dân | Nguyễn Thị Xe | Xe.NT |
+| **7A4** | Thứ 4 | Chiều | Tiết 1 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A4** | Thứ 4 | Chiều | Tiết 2 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A4** | Thứ 4 | Chiều | Tiết 3 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A4** | Thứ 4 | Chiều | Tiết 4 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A4** | Thứ 4 | Chiều | Tiết 5 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A4** | Thứ 5 | Chiều | Tiết 1 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A4** | Thứ 5 | Chiều | Tiết 2 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A4** | Thứ 5 | Chiều | Tiết 3 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A4** | Thứ 5 | Chiều | Tiết 4 | Mỹ thuật | Huỳnh Thanh Dân | Dân.HT (8A6) |
+| **7A4** | Thứ 5 | Chiều | Tiết 5 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A4** | Thứ 6 | Chiều | Tiết 1 | Công nghệ | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A4** | Thứ 6 | Chiều | Tiết 2 | Tiếng Anh | Mai Phước Lộc | Lộc.MP (7A2) |
+| **7A4** | Thứ 6 | Chiều | Tiết 3 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A4** | Thứ 6 | Chiều | Tiết 4 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A4** | Thứ 6 | Chiều | Tiết 5 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A4** | Thứ 7 | Chiều | Tiết 1 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A4** | Thứ 7 | Chiều | Tiết 2 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A4** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A4** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A5** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A5** | Thứ 2 | Chiều | Tiết 2 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A5** | Thứ 2 | Chiều | Tiết 3 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A5** | Thứ 2 | Chiều | Tiết 4 | Tiếng Anh | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A5** | Thứ 2 | Chiều | Tiết 5 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A5** | Thứ 3 | Chiều | Tiết 1 | Âm nhạc | Lê Thị Tuyết Xanh | Xanh.LTT |
+| **7A5** | Thứ 3 | Chiều | Tiết 2 | Tin học | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A5** | Thứ 3 | Chiều | Tiết 3 | Mỹ thuật | Huỳnh Thanh Dân | Dân.HT (8A6) |
+| **7A5** | Thứ 3 | Chiều | Tiết 4 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A5** | Thứ 3 | Chiều | Tiết 5 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A5** | Thứ 4 | Chiều | Tiết 1 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A5** | Thứ 4 | Chiều | Tiết 2 | Công nghệ | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A5** | Thứ 4 | Chiều | Tiết 3 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A5** | Thứ 4 | Chiều | Tiết 4 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A5** | Thứ 4 | Chiều | Tiết 5 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A5** | Thứ 5 | Chiều | Tiết 1 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A5** | Thứ 5 | Chiều | Tiết 2 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A5** | Thứ 5 | Chiều | Tiết 3 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A5** | Thứ 5 | Chiều | Tiết 4 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A5** | Thứ 5 | Chiều | Tiết 5 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A5** | Thứ 6 | Chiều | Tiết 1 | Tiếng Anh | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A5** | Thứ 6 | Chiều | Tiết 2 | Tiếng Anh | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A5** | Thứ 6 | Chiều | Tiết 3 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A5** | Thứ 6 | Chiều | Tiết 4 | Giáo dục công dân | Nguyễn Thị Xe | Xe.NT |
+| **7A5** | Thứ 6 | Chiều | Tiết 5 | Khoa học tự nhiên | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A5** | Thứ 7 | Chiều | Tiết 1 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A5** | Thứ 7 | Chiều | Tiết 2 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A5** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A5** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Nguyễn Thị Hiếu | Hiếu.NT (7A5) |
+| **7A6** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A6** | Thứ 2 | Chiều | Tiết 2 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A6** | Thứ 2 | Chiều | Tiết 3 | Mỹ thuật | Huỳnh Thanh Dân | Dân.HT (8A6) |
+| **7A6** | Thứ 2 | Chiều | Tiết 4 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A6** | Thứ 2 | Chiều | Tiết 5 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A6** | Thứ 3 | Chiều | Tiết 1 | Tin học | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A6** | Thứ 3 | Chiều | Tiết 2 | Tiếng Anh | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A6** | Thứ 3 | Chiều | Tiết 3 | Tiếng Anh | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A6** | Thứ 3 | Chiều | Tiết 4 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A6** | Thứ 3 | Chiều | Tiết 5 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A6** | Thứ 4 | Chiều | Tiết 1 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A6** | Thứ 4 | Chiều | Tiết 2 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A6** | Thứ 4 | Chiều | Tiết 3 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A6** | Thứ 4 | Chiều | Tiết 4 | Tiếng Anh | Nguyễn Thị Mai Khanh | Khanh.NTM |
+| **7A6** | Thứ 4 | Chiều | Tiết 5 | Âm nhạc | Lê Thị Tuyết Xanh | Xanh.LTT |
+| **7A6** | Thứ 5 | Chiều | Tiết 1 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A6** | Thứ 5 | Chiều | Tiết 2 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A6** | Thứ 5 | Chiều | Tiết 3 | Khoa học tự nhiên | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A6** | Thứ 5 | Chiều | Tiết 4 | Lịch sử và Địa lí | Nguyễn Thị Kim Đỉnh | Đỉnh.NTK |
+| **7A6** | Thứ 5 | Chiều | Tiết 5 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **7A6** | Thứ 6 | Chiều | Tiết 1 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A6** | Thứ 6 | Chiều | Tiết 2 | Lịch sử và Địa lí | Nguyễn Thị Xe | Xe.NT |
+| **7A6** | Thứ 6 | Chiều | Tiết 3 | Công nghệ | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A6** | Thứ 6 | Chiều | Tiết 4 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A6** | Thứ 6 | Chiều | Tiết 5 | Toán học | Nguyễn Quốc Nguyễn | Nguyễn.NQ (7A3) |
+| **7A6** | Thứ 7 | Chiều | Tiết 1 | Giáo dục công dân | Nguyễn Thị Xe | Xe.NT |
+| **7A6** | Thứ 7 | Chiều | Tiết 2 | Ngữ văn | Hứa Thùy Dương | Dương.HT |
+| **7A6** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A6** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Trần Thị Cẩm | Cẩm.TT (7A6) |
+| **7A7** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Trần Kim Phương | Phương.TK (7A7) |
+| **7A7** | Thứ 2 | Chiều | Tiết 2 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A7** | Thứ 2 | Chiều | Tiết 3 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A7** | Thứ 2 | Chiều | Tiết 4 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A7** | Thứ 2 | Chiều | Tiết 5 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A7** | Thứ 3 | Chiều | Tiết 1 | Tiếng Anh | Lê Thị Ngọc Tuyền | Tuyền.LTN |
+| **7A7** | Thứ 3 | Chiều | Tiết 2 | Giáo dục thể chất | Lê Văn Chính | Chính.LV (7A9) |
+| **7A7** | Thứ 3 | Chiều | Tiết 3 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A7** | Thứ 3 | Chiều | Tiết 4 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A7** | Thứ 3 | Chiều | Tiết 5 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A7** | Thứ 4 | Chiều | Tiết 1 | Giáo dục thể chất | Lê Văn Chính | Chính.LV (7A9) |
+| **7A7** | Thứ 4 | Chiều | Tiết 2 | Âm nhạc | Trần Thị Mỹ Quốc | Quốc.TTM |
+| **7A7** | Thứ 4 | Chiều | Tiết 3 | Tin học | Lê Minh Thành | Thành.LM |
+| **7A7** | Thứ 4 | Chiều | Tiết 4 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A7** | Thứ 4 | Chiều | Tiết 5 | Mỹ thuật | Nguyễn Anh Văn | Văn.NA |
+| **7A7** | Thứ 5 | Chiều | Tiết 1 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A7** | Thứ 5 | Chiều | Tiết 2 | Giáo dục công dân | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A7** | Thứ 5 | Chiều | Tiết 3 | Tiếng Anh | Lê Thị Ngọc Tuyền | Tuyền.LTN |
+| **7A7** | Thứ 5 | Chiều | Tiết 4 | Công nghệ | Thái Văn Tiến | Tiến.TV (8A7) |
+| **7A7** | Thứ 5 | Chiều | Tiết 5 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A7** | Thứ 6 | Chiều | Tiết 1 | Tiếng Anh | Lê Thị Ngọc Tuyền | Tuyền.LTN |
+| **7A7** | Thứ 6 | Chiều | Tiết 2 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A7** | Thứ 6 | Chiều | Tiết 3 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A7** | Thứ 6 | Chiều | Tiết 4 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A7** | Thứ 6 | Chiều | Tiết 5 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A7** | Thứ 7 | Chiều | Tiết 1 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A7** | Thứ 7 | Chiều | Tiết 2 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A7** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Trần Kim Phương | Phương.TK (7A7) |
+| **7A7** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Trần Kim Phương | Phương.TK (7A7) |
+| **7A8** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A8** | Thứ 2 | Chiều | Tiết 2 | Mỹ thuật | Nguyễn Anh Văn | Văn.NA |
+| **7A8** | Thứ 2 | Chiều | Tiết 3 | Âm nhạc | Trần Thị Mỹ Quốc | Quốc.TTM |
+| **7A8** | Thứ 2 | Chiều | Tiết 4 | Tiếng Anh | Lê Minh Thành | Thành.LM |
+| **7A8** | Thứ 2 | Chiều | Tiết 5 | Tin học | Lê Minh Thành | Thành.LM |
+| **7A8** | Thứ 3 | Chiều | Tiết 1 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A8** | Thứ 3 | Chiều | Tiết 2 | Giáo dục công dân | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A8** | Thứ 3 | Chiều | Tiết 3 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A8** | Thứ 3 | Chiều | Tiết 4 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A8** | Thứ 3 | Chiều | Tiết 5 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A8** | Thứ 4 | Chiều | Tiết 1 | Công nghệ | Thái Văn Tiến | Tiến.TV (8A7) |
+| **7A8** | Thứ 4 | Chiều | Tiết 2 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A8** | Thứ 4 | Chiều | Tiết 3 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A8** | Thứ 4 | Chiều | Tiết 4 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A8** | Thứ 4 | Chiều | Tiết 5 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A8** | Thứ 5 | Chiều | Tiết 1 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A8** | Thứ 5 | Chiều | Tiết 2 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A8** | Thứ 5 | Chiều | Tiết 3 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A8** | Thứ 5 | Chiều | Tiết 4 | Giáo dục thể chất | Lê Văn Chính | Chính.LV (7A9) |
+| **7A8** | Thứ 5 | Chiều | Tiết 5 | Tiếng Anh | Lê Minh Thành | Thành.LM |
+| **7A8** | Thứ 6 | Chiều | Tiết 1 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A8** | Thứ 6 | Chiều | Tiết 2 | Tiếng Anh | Lê Minh Thành | Thành.LM |
+| **7A8** | Thứ 6 | Chiều | Tiết 3 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A8** | Thứ 6 | Chiều | Tiết 4 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A8** | Thứ 6 | Chiều | Tiết 5 | Giáo dục thể chất | Lê Văn Chính | Chính.LV (7A9) |
+| **7A8** | Thứ 7 | Chiều | Tiết 1 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A8** | Thứ 7 | Chiều | Tiết 2 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A8** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A8** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A9** | Thứ 2 | Chiều | Tiết 1 | Chào cờ | Lê Văn Chính | Chính.LV (7A9) |
+| **7A9** | Thứ 2 | Chiều | Tiết 2 | Tiếng Anh | Lê Minh Thành | Thành.LM |
+| **7A9** | Thứ 2 | Chiều | Tiết 3 | Giáo dục thể chất | Lê Văn Chính | Chính.LV (7A9) |
+| **7A9** | Thứ 2 | Chiều | Tiết 4 | Âm nhạc | Trần Thị Mỹ Quốc | Quốc.TTM |
+| **7A9** | Thứ 2 | Chiều | Tiết 5 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A9** | Thứ 3 | Chiều | Tiết 1 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A9** | Thứ 3 | Chiều | Tiết 2 | Tiếng Anh | Lê Minh Thành | Thành.LM |
+| **7A9** | Thứ 3 | Chiều | Tiết 3 | Tiếng Anh | Lê Minh Thành | Thành.LM |
+| **7A9** | Thứ 3 | Chiều | Tiết 4 | Giáo dục thể chất | Lê Văn Chính | Chính.LV (7A9) |
+| **7A9** | Thứ 3 | Chiều | Tiết 5 | Mỹ thuật | Nguyễn Anh Văn | Văn.NA |
+| **7A9** | Thứ 4 | Chiều | Tiết 1 | Tin học | Lê Minh Thành | Thành.LM |
+| **7A9** | Thứ 4 | Chiều | Tiết 2 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A9** | Thứ 4 | Chiều | Tiết 3 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A9** | Thứ 4 | Chiều | Tiết 4 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A9** | Thứ 4 | Chiều | Tiết 5 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A9** | Thứ 5 | Chiều | Tiết 1 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A9** | Thứ 5 | Chiều | Tiết 2 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A9** | Thứ 5 | Chiều | Tiết 3 | Công nghệ | Thái Văn Tiến | Tiến.TV (8A7) |
+| **7A9** | Thứ 5 | Chiều | Tiết 4 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A9** | Thứ 5 | Chiều | Tiết 5 | Giáo dục công dân | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A9** | Thứ 6 | Chiều | Tiết 1 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A9** | Thứ 6 | Chiều | Tiết 2 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A9** | Thứ 6 | Chiều | Tiết 3 | Khoa học tự nhiên | Trần Kim Phương | Phương.TK (7A7) |
+| **7A9** | Thứ 6 | Chiều | Tiết 4 | Lịch sử và Địa lí | Phạm Thị Mỹ Châu | Châu.PTM (7A8) |
+| **7A9** | Thứ 6 | Chiều | Tiết 5 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A9** | Thứ 7 | Chiều | Tiết 1 | Toán học | Trần Quốc Huy | Huy.TQ (9A7) |
+| **7A9** | Thứ 7 | Chiều | Tiết 2 | Ngữ văn | Nguyễn Thị Thảo | Thảo.NT |
+| **7A9** | Thứ 7 | Chiều | Tiết 3 | HĐTNHN (Quy mô lớp) | Lê Văn Chính | Chính.LV (7A9) |
+| **7A9** | Thứ 7 | Chiều | Tiết 4 | Sinh hoạt lớp | Lê Văn Chính | Chính.LV (7A9) |

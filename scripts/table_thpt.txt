@@ -1,0 +1,397 @@
+| **10CB1** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **10CB1** | Thứ 2 | Sáng | Tiết 2 | Sinh học | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **10CB1** | Thứ 2 | Sáng | Tiết 3 | HĐTNHN (Chuyên đề) | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **10CB1** | Thứ 2 | Sáng | Tiết 4 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB1** | Thứ 2 | Sáng | Tiết 5 | Hóa học | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB1** | Thứ 3 | Sáng | Tiết 1 | Hóa học | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB1** | Thứ 3 | Sáng | Tiết 2 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **10CB1** | Thứ 3 | Sáng | Tiết 3 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **10CB1** | Thứ 3 | Sáng | Tiết 4 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **10CB1** | Thứ 3 | Sáng | Tiết 5 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **10CB1** | Thứ 4 | Sáng | Tiết 1 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **10CB1** | Thứ 4 | Sáng | Tiết 2 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **10CB1** | Thứ 4 | Sáng | Tiết 3 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB1** | Thứ 4 | Sáng | Tiết 4 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **10CB1** | Thứ 4 | Sáng | Tiết 5 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **10CB1** | Thứ 5 | Sáng | Tiết 1 | Hóa học | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB1** | Thứ 5 | Sáng | Tiết 2 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **10CB1** | Thứ 5 | Sáng | Tiết 3 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **10CB1** | Thứ 6 | Sáng | Tiết 1 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **10CB1** | Thứ 6 | Sáng | Tiết 2 | Sinh học | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **10CB1** | Thứ 6 | Sáng | Tiết 3 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB1** | Thứ 6 | Sáng | Tiết 4 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **10CB1** | Thứ 6 | Sáng | Tiết 5 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB1** | Thứ 7 | Sáng | Tiết 1 | Sinh học | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **10CB1** | Thứ 7 | Sáng | Tiết 2 | HĐTNHN (Chuyên đề) | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **10CB1** | Thứ 7 | Sáng | Tiết 3 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **10CB1** | Thứ 7 | Sáng | Tiết 4 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **10CB1** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **10CB2** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB2** | Thứ 2 | Sáng | Tiết 2 | Hóa học | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB2** | Thứ 2 | Sáng | Tiết 3 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **10CB2** | Thứ 2 | Sáng | Tiết 4 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **10CB2** | Thứ 2 | Sáng | Tiết 5 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **10CB2** | Thứ 3 | Sáng | Tiết 1 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB2** | Thứ 3 | Sáng | Tiết 2 | Hóa học | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB2** | Thứ 3 | Sáng | Tiết 3 | HĐTNHN (Chuyên đề) | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB2** | Thứ 3 | Sáng | Tiết 4 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB2** | Thứ 3 | Sáng | Tiết 5 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **10CB2** | Thứ 4 | Sáng | Tiết 1 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **10CB2** | Thứ 4 | Sáng | Tiết 2 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **10CB2** | Thứ 4 | Sáng | Tiết 3 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **10CB2** | Thứ 4 | Sáng | Tiết 4 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **10CB2** | Thứ 4 | Sáng | Tiết 5 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **10CB2** | Thứ 5 | Sáng | Tiết 1 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **10CB2** | Thứ 5 | Sáng | Tiết 2 | HĐTNHN (Chuyên đề) | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB2** | Thứ 5 | Sáng | Tiết 3 | Hóa học | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB2** | Thứ 6 | Sáng | Tiết 1 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **10CB2** | Thứ 6 | Sáng | Tiết 2 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB2** | Thứ 6 | Sáng | Tiết 3 | Lịch sử | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **10CB2** | Thứ 6 | Sáng | Tiết 4 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB2** | Thứ 6 | Sáng | Tiết 5 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **10CB2** | Thứ 7 | Sáng | Tiết 1 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **10CB2** | Thứ 7 | Sáng | Tiết 2 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **10CB2** | Thứ 7 | Sáng | Tiết 3 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **10CB2** | Thứ 7 | Sáng | Tiết 4 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB2** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB3** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **10CB3** | Thứ 2 | Sáng | Tiết 2 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB3** | Thứ 2 | Sáng | Tiết 3 | HĐTNHN (Chuyên đề) | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB3** | Thứ 2 | Sáng | Tiết 4 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **10CB3** | Thứ 2 | Sáng | Tiết 5 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **10CB3** | Thứ 3 | Sáng | Tiết 1 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **10CB3** | Thứ 3 | Sáng | Tiết 2 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **10CB3** | Thứ 3 | Sáng | Tiết 3 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **10CB3** | Thứ 3 | Sáng | Tiết 4 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **10CB3** | Thứ 3 | Sáng | Tiết 5 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB3** | Thứ 4 | Sáng | Tiết 1 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **10CB3** | Thứ 4 | Sáng | Tiết 2 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **10CB3** | Thứ 4 | Sáng | Tiết 3 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **10CB3** | Thứ 4 | Sáng | Tiết 4 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB3** | Thứ 4 | Sáng | Tiết 5 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB3** | Thứ 5 | Sáng | Tiết 1 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB3** | Thứ 5 | Sáng | Tiết 2 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **10CB3** | Thứ 5 | Sáng | Tiết 3 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **10CB3** | Thứ 5 | Sáng | Tiết 4 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **10CB3** | Thứ 5 | Sáng | Tiết 5 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **10CB3** | Thứ 6 | Sáng | Tiết 1 | Lịch sử | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **10CB3** | Thứ 6 | Sáng | Tiết 2 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **10CB3** | Thứ 6 | Sáng | Tiết 3 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **10CB3** | Thứ 6 | Sáng | Tiết 4 | HĐTNHN (Chuyên đề) | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB3** | Thứ 6 | Sáng | Tiết 5 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **10CB3** | Thứ 7 | Sáng | Tiết 3 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB3** | Thứ 7 | Sáng | Tiết 4 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **10CB3** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **10CB4** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB4** | Thứ 2 | Sáng | Tiết 2 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **10CB4** | Thứ 2 | Sáng | Tiết 3 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **10CB4** | Thứ 2 | Sáng | Tiết 4 | HĐTNHN (Chuyên đề) | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB4** | Thứ 2 | Sáng | Tiết 5 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB4** | Thứ 3 | Sáng | Tiết 1 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **10CB4** | Thứ 3 | Sáng | Tiết 2 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB4** | Thứ 3 | Sáng | Tiết 3 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **10CB4** | Thứ 3 | Sáng | Tiết 4 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **10CB4** | Thứ 3 | Sáng | Tiết 5 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **10CB4** | Thứ 4 | Sáng | Tiết 1 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **10CB4** | Thứ 4 | Sáng | Tiết 2 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **10CB4** | Thứ 4 | Sáng | Tiết 3 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **10CB4** | Thứ 4 | Sáng | Tiết 4 | Tin học | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB4** | Thứ 4 | Sáng | Tiết 5 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB4** | Thứ 5 | Sáng | Tiết 1 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **10CB4** | Thứ 5 | Sáng | Tiết 2 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB4** | Thứ 5 | Sáng | Tiết 3 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **10CB4** | Thứ 6 | Sáng | Tiết 1 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **10CB4** | Thứ 6 | Sáng | Tiết 2 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **10CB4** | Thứ 6 | Sáng | Tiết 3 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **10CB4** | Thứ 6 | Sáng | Tiết 4 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB4** | Thứ 6 | Sáng | Tiết 5 | HĐTNHN (Chuyên đề) | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB4** | Thứ 7 | Sáng | Tiết 1 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **10CB4** | Thứ 7 | Sáng | Tiết 2 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **10CB4** | Thứ 7 | Sáng | Tiết 3 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **10CB4** | Thứ 7 | Sáng | Tiết 4 | Giáo dục thể chất | Lê Ngọc Ẩn | Ẩn.LN (7A4) |
+| **10CB4** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Lê Thị Thu Diễm | Diễm.LTT (10CB4) |
+| **10CB5** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **10CB5** | Thứ 2 | Sáng | Tiết 2 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **10CB5** | Thứ 2 | Sáng | Tiết 3 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB5** | Thứ 2 | Sáng | Tiết 4 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **10CB5** | Thứ 2 | Sáng | Tiết 5 | Toán học | Trần Văn Giang | Giang.TV |
+| **10CB5** | Thứ 3 | Sáng | Tiết 1 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **10CB5** | Thứ 3 | Sáng | Tiết 2 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **10CB5** | Thứ 3 | Sáng | Tiết 3 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **10CB5** | Thứ 3 | Sáng | Tiết 4 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **10CB5** | Thứ 3 | Sáng | Tiết 5 | HĐTNHN (Chuyên đề) | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB5** | Thứ 4 | Sáng | Tiết 1 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB5** | Thứ 4 | Sáng | Tiết 2 | Toán học | Trần Văn Giang | Giang.TV |
+| **10CB5** | Thứ 4 | Sáng | Tiết 3 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **10CB5** | Thứ 4 | Sáng | Tiết 4 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **10CB5** | Thứ 4 | Sáng | Tiết 5 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **10CB5** | Thứ 5 | Sáng | Tiết 1 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **10CB5** | Thứ 5 | Sáng | Tiết 2 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **10CB5** | Thứ 5 | Sáng | Tiết 3 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **10CB5** | Thứ 6 | Sáng | Tiết 1 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **10CB5** | Thứ 6 | Sáng | Tiết 2 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **10CB5** | Thứ 6 | Sáng | Tiết 3 | Toán học | Trần Văn Giang | Giang.TV |
+| **10CB5** | Thứ 6 | Sáng | Tiết 4 | Toán học | Trần Văn Giang | Giang.TV |
+| **10CB5** | Thứ 6 | Sáng | Tiết 5 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **10CB5** | Thứ 7 | Sáng | Tiết 1 | Giáo dục thể chất | Nguyễn Kim Rạng | Rạng.NK |
+| **10CB5** | Thứ 7 | Sáng | Tiết 2 | Giáo dục thể chất | Nguyễn Kim Rạng | Rạng.NK |
+| **10CB5** | Thứ 7 | Sáng | Tiết 3 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **10CB5** | Thứ 7 | Sáng | Tiết 4 | HĐTNHN (Chuyên đề) | Trần Thị Kiều | Kiều.TT (10CB2) |
+| **10CB5** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **11CB1** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **11CB1** | Thứ 2 | Sáng | Tiết 2 | Hóa học | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **11CB1** | Thứ 2 | Sáng | Tiết 3 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **11CB1** | Thứ 2 | Sáng | Tiết 4 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB1** | Thứ 2 | Sáng | Tiết 5 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **11CB1** | Thứ 3 | Sáng | Tiết 1 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **11CB1** | Thứ 3 | Sáng | Tiết 2 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **11CB1** | Thứ 3 | Sáng | Tiết 3 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **11CB1** | Thứ 3 | Sáng | Tiết 4 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **11CB1** | Thứ 3 | Sáng | Tiết 5 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB1** | Thứ 4 | Sáng | Tiết 1 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **11CB1** | Thứ 4 | Sáng | Tiết 2 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **11CB1** | Thứ 4 | Sáng | Tiết 3 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **11CB1** | Thứ 4 | Sáng | Tiết 4 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **11CB1** | Thứ 4 | Sáng | Tiết 5 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **11CB1** | Thứ 5 | Sáng | Tiết 1 | Hóa học | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **11CB1** | Thứ 5 | Sáng | Tiết 2 | HĐTNHN (Chuyên đề) | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB1** | Thứ 5 | Sáng | Tiết 3 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **11CB1** | Thứ 6 | Sáng | Tiết 1 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **11CB1** | Thứ 6 | Sáng | Tiết 2 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **11CB1** | Thứ 6 | Sáng | Tiết 3 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **11CB1** | Thứ 6 | Sáng | Tiết 4 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **11CB1** | Thứ 6 | Sáng | Tiết 5 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **11CB1** | Thứ 7 | Sáng | Tiết 1 | HĐTNHN (Chuyên đề) | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB1** | Thứ 7 | Sáng | Tiết 2 | Lịch sử | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **11CB1** | Thứ 7 | Sáng | Tiết 3 | Hóa học | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **11CB1** | Thứ 7 | Sáng | Tiết 4 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **11CB1** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **11CB2** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB2** | Thứ 2 | Sáng | Tiết 2 | Hóa học | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB2** | Thứ 2 | Sáng | Tiết 3 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB2** | Thứ 2 | Sáng | Tiết 4 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **11CB2** | Thứ 2 | Sáng | Tiết 5 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **11CB2** | Thứ 3 | Sáng | Tiết 1 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **11CB2** | Thứ 3 | Sáng | Tiết 2 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **11CB2** | Thứ 3 | Sáng | Tiết 3 | HĐTNHN (Chuyên đề) | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB2** | Thứ 3 | Sáng | Tiết 4 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **11CB2** | Thứ 3 | Sáng | Tiết 5 | Lịch sử | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **11CB2** | Thứ 4 | Sáng | Tiết 1 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **11CB2** | Thứ 4 | Sáng | Tiết 2 | Hóa học | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB2** | Thứ 4 | Sáng | Tiết 3 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **11CB2** | Thứ 4 | Sáng | Tiết 4 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **11CB2** | Thứ 4 | Sáng | Tiết 5 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB2** | Thứ 5 | Sáng | Tiết 1 | Hóa học | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB2** | Thứ 5 | Sáng | Tiết 2 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB2** | Thứ 5 | Sáng | Tiết 3 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **11CB2** | Thứ 6 | Sáng | Tiết 1 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **11CB2** | Thứ 6 | Sáng | Tiết 2 | Toán học | Lê Cao Toàn | Toàn.LC |
+| **11CB2** | Thứ 6 | Sáng | Tiết 3 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **11CB2** | Thứ 6 | Sáng | Tiết 4 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **11CB2** | Thứ 6 | Sáng | Tiết 5 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **11CB2** | Thứ 7 | Sáng | Tiết 1 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **11CB2** | Thứ 7 | Sáng | Tiết 2 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **11CB2** | Thứ 7 | Sáng | Tiết 3 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **11CB2** | Thứ 7 | Sáng | Tiết 4 | HĐTNHN (Chuyên đề) | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB2** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB3** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **11CB3** | Thứ 2 | Sáng | Tiết 2 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **11CB3** | Thứ 2 | Sáng | Tiết 3 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **11CB3** | Thứ 2 | Sáng | Tiết 4 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **11CB3** | Thứ 2 | Sáng | Tiết 5 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **11CB3** | Thứ 3 | Sáng | Tiết 1 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **11CB3** | Thứ 3 | Sáng | Tiết 2 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **11CB3** | Thứ 3 | Sáng | Tiết 3 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **11CB3** | Thứ 3 | Sáng | Tiết 4 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB3** | Thứ 3 | Sáng | Tiết 5 | HĐTNHN (Chuyên đề) | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB3** | Thứ 4 | Sáng | Tiết 1 | HĐTNHN (Chuyên đề) | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB3** | Thứ 4 | Sáng | Tiết 2 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **11CB3** | Thứ 4 | Sáng | Tiết 3 | Toán học | Trần Văn Giang | Giang.TV |
+| **11CB3** | Thứ 4 | Sáng | Tiết 4 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB3** | Thứ 4 | Sáng | Tiết 5 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **11CB3** | Thứ 5 | Sáng | Tiết 1 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **11CB3** | Thứ 5 | Sáng | Tiết 2 | Tiếng Anh | Nguyễn Thị Vân Anh | Anh.NTV |
+| **11CB3** | Thứ 5 | Sáng | Tiết 3 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB3** | Thứ 6 | Sáng | Tiết 1 | Vật lí | Trần Thị Ngọc Hiền | Hiền.TTN |
+| **11CB3** | Thứ 6 | Sáng | Tiết 2 | Toán học | Trần Văn Giang | Giang.TV |
+| **11CB3** | Thứ 6 | Sáng | Tiết 3 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **11CB3** | Thứ 6 | Sáng | Tiết 4 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **11CB3** | Thứ 6 | Sáng | Tiết 5 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **11CB3** | Thứ 7 | Sáng | Tiết 1 | Toán học | Trần Văn Giang | Giang.TV |
+| **11CB3** | Thứ 7 | Sáng | Tiết 2 | Toán học | Trần Văn Giang | Giang.TV |
+| **11CB3** | Thứ 7 | Sáng | Tiết 3 | Lịch sử | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **11CB3** | Thứ 7 | Sáng | Tiết 4 | Ngữ văn | Hồ Văn Nhịnh | Nhịnh.HV (10CB5) |
+| **11CB3** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **11CB4** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB4** | Thứ 2 | Sáng | Tiết 2 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **11CB4** | Thứ 2 | Sáng | Tiết 3 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **11CB4** | Thứ 2 | Sáng | Tiết 4 | Toán học | Trần Văn Giang | Giang.TV |
+| **11CB4** | Thứ 2 | Sáng | Tiết 5 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB4** | Thứ 3 | Sáng | Tiết 1 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **11CB4** | Thứ 3 | Sáng | Tiết 2 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **11CB4** | Thứ 3 | Sáng | Tiết 3 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **11CB4** | Thứ 3 | Sáng | Tiết 4 | HĐTNHN (Chuyên đề) | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB4** | Thứ 3 | Sáng | Tiết 5 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **11CB4** | Thứ 4 | Sáng | Tiết 1 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **11CB4** | Thứ 4 | Sáng | Tiết 2 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **11CB4** | Thứ 4 | Sáng | Tiết 3 | Lịch sử | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **11CB4** | Thứ 4 | Sáng | Tiết 4 | Toán học | Trần Văn Giang | Giang.TV |
+| **11CB4** | Thứ 4 | Sáng | Tiết 5 | Toán học | Trần Văn Giang | Giang.TV |
+| **11CB4** | Thứ 5 | Sáng | Tiết 1 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB4** | Thứ 5 | Sáng | Tiết 2 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **11CB4** | Thứ 5 | Sáng | Tiết 3 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **11CB4** | Thứ 6 | Sáng | Tiết 1 | Toán học | Trần Văn Giang | Giang.TV |
+| **11CB4** | Thứ 6 | Sáng | Tiết 2 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **11CB4** | Thứ 6 | Sáng | Tiết 3 | Tiếng Anh | Ngô Bảo Quốc | Quốc.NB |
+| **11CB4** | Thứ 6 | Sáng | Tiết 4 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **11CB4** | Thứ 6 | Sáng | Tiết 5 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **11CB4** | Thứ 7 | Sáng | Tiết 1 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **11CB4** | Thứ 7 | Sáng | Tiết 2 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **11CB4** | Thứ 7 | Sáng | Tiết 3 | HĐTNHN (Chuyên đề) | Phạm Long Phi | Phi.PL (11CB2) |
+| **11CB4** | Thứ 7 | Sáng | Tiết 4 | Tin học | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **11CB4** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Đào Thị Ngọc Liên | Liên.ĐTN (11CB4) |
+| **12CB1** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **12CB1** | Thứ 2 | Sáng | Tiết 2 | Lịch sử | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **12CB1** | Thứ 2 | Sáng | Tiết 3 | HĐTNHN (Chuyên đề) | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **12CB1** | Thứ 2 | Sáng | Tiết 4 | Toán học | Nguyễn Văn Tới | Tới.NV (TT) |
+| **12CB1** | Thứ 2 | Sáng | Tiết 5 | Toán học | Nguyễn Văn Tới | Tới.NV (TT) |
+| **12CB1** | Thứ 3 | Sáng | Tiết 1 | Hóa học | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **12CB1** | Thứ 3 | Sáng | Tiết 2 | Toán học | Nguyễn Văn Tới | Tới.NV (TT) |
+| **12CB1** | Thứ 3 | Sáng | Tiết 3 | Toán học | Nguyễn Văn Tới | Tới.NV (TT) |
+| **12CB1** | Thứ 3 | Sáng | Tiết 4 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **12CB1** | Thứ 3 | Sáng | Tiết 5 | Lịch sử | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **12CB1** | Thứ 4 | Sáng | Tiết 1 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **12CB1** | Thứ 4 | Sáng | Tiết 2 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **12CB1** | Thứ 4 | Sáng | Tiết 3 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **12CB1** | Thứ 4 | Sáng | Tiết 4 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **12CB1** | Thứ 4 | Sáng | Tiết 5 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB1** | Thứ 5 | Sáng | Tiết 1 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **12CB1** | Thứ 5 | Sáng | Tiết 2 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **12CB1** | Thứ 5 | Sáng | Tiết 3 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB1** | Thứ 5 | Sáng | Tiết 4 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB1** | Thứ 6 | Sáng | Tiết 1 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **12CB1** | Thứ 6 | Sáng | Tiết 2 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **12CB1** | Thứ 6 | Sáng | Tiết 3 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB1** | Thứ 6 | Sáng | Tiết 4 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB1** | Thứ 6 | Sáng | Tiết 5 | Lịch sử | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **12CB1** | Thứ 7 | Sáng | Tiết 1 | HĐTNHN (Chuyên đề) | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **12CB1** | Thứ 7 | Sáng | Tiết 2 | Hóa học | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **12CB1** | Thứ 7 | Sáng | Tiết 3 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **12CB1** | Thứ 7 | Sáng | Tiết 4 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **12CB1** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **12CB2** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **12CB2** | Thứ 2 | Sáng | Tiết 2 | HĐTNHN (Chuyên đề) | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **12CB2** | Thứ 2 | Sáng | Tiết 3 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB2** | Thứ 2 | Sáng | Tiết 4 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB2** | Thứ 2 | Sáng | Tiết 5 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **12CB2** | Thứ 3 | Sáng | Tiết 1 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB2** | Thứ 3 | Sáng | Tiết 2 | Hóa học | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **12CB2** | Thứ 3 | Sáng | Tiết 3 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **12CB2** | Thứ 3 | Sáng | Tiết 4 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **12CB2** | Thứ 3 | Sáng | Tiết 5 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **12CB2** | Thứ 4 | Sáng | Tiết 1 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB2** | Thứ 4 | Sáng | Tiết 2 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB2** | Thứ 4 | Sáng | Tiết 3 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **12CB2** | Thứ 4 | Sáng | Tiết 4 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB2** | Thứ 4 | Sáng | Tiết 5 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **12CB2** | Thứ 5 | Sáng | Tiết 1 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **12CB2** | Thứ 5 | Sáng | Tiết 2 | Hóa học | Phan Thị Ngọc Thơ | Thơ.PTN (12CB1) |
+| **12CB2** | Thứ 5 | Sáng | Tiết 3 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **12CB2** | Thứ 5 | Sáng | Tiết 4 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **12CB2** | Thứ 6 | Sáng | Tiết 1 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **12CB2** | Thứ 6 | Sáng | Tiết 2 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB2** | Thứ 6 | Sáng | Tiết 3 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB2** | Thứ 6 | Sáng | Tiết 4 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **12CB2** | Thứ 6 | Sáng | Tiết 5 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **12CB2** | Thứ 7 | Sáng | Tiết 1 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **12CB2** | Thứ 7 | Sáng | Tiết 2 | Ngữ văn | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **12CB2** | Thứ 7 | Sáng | Tiết 3 | HĐTNHN (Chuyên đề) | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **12CB2** | Thứ 7 | Sáng | Tiết 4 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **12CB2** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Trương Thị Mỹ Duyên | Duyên.TTM (12CB2) |
+| **12CB3** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **12CB3** | Thứ 2 | Sáng | Tiết 2 | Lịch sử | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **12CB3** | Thứ 2 | Sáng | Tiết 3 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **12CB3** | Thứ 2 | Sáng | Tiết 4 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **12CB3** | Thứ 2 | Sáng | Tiết 5 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **12CB3** | Thứ 3 | Sáng | Tiết 1 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **12CB3** | Thứ 3 | Sáng | Tiết 2 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **12CB3** | Thứ 3 | Sáng | Tiết 3 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **12CB3** | Thứ 3 | Sáng | Tiết 4 | Lịch sử | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **12CB3** | Thứ 3 | Sáng | Tiết 5 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **12CB3** | Thứ 4 | Sáng | Tiết 1 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB3** | Thứ 4 | Sáng | Tiết 2 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB3** | Thứ 4 | Sáng | Tiết 3 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **12CB3** | Thứ 4 | Sáng | Tiết 4 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **12CB3** | Thứ 4 | Sáng | Tiết 5 | HĐTNHN (Chuyên đề) | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **12CB3** | Thứ 5 | Sáng | Tiết 1 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **12CB3** | Thứ 5 | Sáng | Tiết 2 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **12CB3** | Thứ 5 | Sáng | Tiết 3 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **12CB3** | Thứ 5 | Sáng | Tiết 4 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **12CB3** | Thứ 6 | Sáng | Tiết 1 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB3** | Thứ 6 | Sáng | Tiết 2 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB3** | Thứ 6 | Sáng | Tiết 3 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **12CB3** | Thứ 6 | Sáng | Tiết 4 | Toán học | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **12CB3** | Thứ 6 | Sáng | Tiết 5 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB3** | Thứ 7 | Sáng | Tiết 1 | HĐTNHN (Chuyên đề) | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **12CB3** | Thứ 7 | Sáng | Tiết 2 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **12CB3** | Thứ 7 | Sáng | Tiết 3 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **12CB3** | Thứ 7 | Sáng | Tiết 4 | Lịch sử | Trần Văn Rỡ | Rỡ.TV (11CB3) |
+| **12CB3** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Võ Thị Ngọc Hương | Hương.VTN (12CB3) |
+| **12CB4** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB4** | Thứ 2 | Sáng | Tiết 2 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **12CB4** | Thứ 2 | Sáng | Tiết 3 | Toán học | Nguyễn Văn Tới | Tới.NV (TT) |
+| **12CB4** | Thứ 2 | Sáng | Tiết 4 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **12CB4** | Thứ 2 | Sáng | Tiết 5 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB4** | Thứ 3 | Sáng | Tiết 1 | Toán học | Nguyễn Văn Tới | Tới.NV (TT) |
+| **12CB4** | Thứ 3 | Sáng | Tiết 2 | HĐTNHN (Chuyên đề) | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB4** | Thứ 3 | Sáng | Tiết 3 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **12CB4** | Thứ 3 | Sáng | Tiết 4 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **12CB4** | Thứ 3 | Sáng | Tiết 5 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB4** | Thứ 4 | Sáng | Tiết 1 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **12CB4** | Thứ 4 | Sáng | Tiết 2 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **12CB4** | Thứ 4 | Sáng | Tiết 3 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB4** | Thứ 4 | Sáng | Tiết 4 | Tiếng Anh | Võ Thị Hiền Thi | Thi.VTH |
+| **12CB4** | Thứ 4 | Sáng | Tiết 5 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **12CB4** | Thứ 5 | Sáng | Tiết 1 | Toán học | Nguyễn Văn Tới | Tới.NV (TT) |
+| **12CB4** | Thứ 5 | Sáng | Tiết 2 | Toán học | Nguyễn Văn Tới | Tới.NV (TT) |
+| **12CB4** | Thứ 5 | Sáng | Tiết 3 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB4** | Thứ 5 | Sáng | Tiết 4 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB4** | Thứ 6 | Sáng | Tiết 1 | Địa lí | Trần Phước Hòa | Hòa.TP |
+| **12CB4** | Thứ 6 | Sáng | Tiết 2 | Vật lí | Phạm Biên Thùy | Thùy.PB |
+| **12CB4** | Thứ 6 | Sáng | Tiết 3 | Tin học | Nguyễn Trung Hiếu | Hiếu.NT (Tin) |
+| **12CB4** | Thứ 6 | Sáng | Tiết 4 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB4** | Thứ 6 | Sáng | Tiết 5 | HĐTNHN (Chuyên đề) | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB4** | Thứ 7 | Sáng | Tiết 1 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **12CB4** | Thứ 7 | Sáng | Tiết 2 | Ngữ văn | Lê Thị Mỹ Ny | Ny.LTM (10CB3) |
+| **12CB4** | Thứ 7 | Sáng | Tiết 3 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **12CB4** | Thứ 7 | Sáng | Tiết 4 | Lịch sử | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB4** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Nguyễn Thị Bé Trang | Trang.NTB (12CB4) |
+| **12CB5** | Thứ 2 | Sáng | Tiết 1 | Chào cờ | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **12CB5** | Thứ 2 | Sáng | Tiết 2 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **12CB5** | Thứ 2 | Sáng | Tiết 3 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **12CB5** | Thứ 2 | Sáng | Tiết 4 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **12CB5** | Thứ 2 | Sáng | Tiết 5 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **12CB5** | Thứ 3 | Sáng | Tiết 1 | Tiếng Anh | Trương Sơn Bền | Bền.TS |
+| **12CB5** | Thứ 3 | Sáng | Tiết 2 | Tiếng Anh | Trương Sơn Bền | Bền.TS |
+| **12CB5** | Thứ 3 | Sáng | Tiết 3 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **12CB5** | Thứ 3 | Sáng | Tiết 4 | Lịch sử | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **12CB5** | Thứ 3 | Sáng | Tiết 5 | HĐTNHN (Chuyên đề) | Nguyễn Minh Trí | Trí.NM (PHT) |
+| **12CB5** | Thứ 4 | Sáng | Tiết 1 | Tiếng Anh | Trương Sơn Bền | Bền.TS |
+| **12CB5** | Thứ 4 | Sáng | Tiết 2 | GDQP - AN | Nguyễn Kim Rạng | Rạng.NK |
+| **12CB5** | Thứ 4 | Sáng | Tiết 3 | Sinh học | Bùi Kim Huỳnh | Huỳnh.BK (11CB1) |
+| **12CB5** | Thứ 4 | Sáng | Tiết 4 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **12CB5** | Thứ 4 | Sáng | Tiết 5 | Toán học | Lê Văn Toàn | Toàn.LV |
+| **12CB5** | Thứ 5 | Sáng | Tiết 1 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB5** | Thứ 5 | Sáng | Tiết 2 | Giáo dục thể chất | Hồ Hoài Ngân | Ngân.HH |
+| **12CB5** | Thứ 5 | Sáng | Tiết 3 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **12CB5** | Thứ 5 | Sáng | Tiết 4 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **12CB5** | Thứ 6 | Sáng | Tiết 1 | Công nghệ | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **12CB5** | Thứ 6 | Sáng | Tiết 2 | Lịch sử | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **12CB5** | Thứ 6 | Sáng | Tiết 3 | Giáo dục KT & PL | Phạm Nguyễn Văn Trường | Trường.PNV |
+| **12CB5** | Thứ 6 | Sáng | Tiết 4 | Địa lí | Ngô Anh Tuấn | Tuấn.NA |
+| **12CB5** | Thứ 6 | Sáng | Tiết 5 | HĐTNHN (Chuyên đề) | Nguyễn Minh Trí | Trí.NM (PHT) |
+| **12CB5** | Thứ 7 | Sáng | Tiết 1 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **12CB5** | Thứ 7 | Sáng | Tiết 2 | Ngữ văn | Tô Thị Lắm | Lắm.TT |
+| **12CB5** | Thứ 7 | Sáng | Tiết 3 | Công nghệ | Cao Văn Tùng | Tùng.CV (10CB1) |
+| **12CB5** | Thứ 7 | Sáng | Tiết 4 | Lịch sử | Trịnh Văn Sơn | Sơn.TV (12CB5) |
+| **12CB5** | Thứ 7 | Sáng | Tiết 5 | Sinh hoạt lớp | Trịnh Văn Sơn | Sơn.TV (12CB5) |

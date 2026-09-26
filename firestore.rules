@@ -1,0 +1,108 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions for security and RBAC
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function getUserRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        getUserRole() == 'admin' ||
+        request.auth.token.email == 'nguyenminhtridbk@gmail.com'
+      );
+    }
+
+    function isHeadOfDepartment() {
+      return isSignedIn() && (getUserRole() == 'head_of_department' || isAdmin());
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Campuses, Subjects, Classes: read by all signed-in users, write by admin
+    match /campuses/{campusId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    match /subjects/{subjectId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    match /classes/{classId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Teachers profile: read by all signed in; write by admin
+    match /teachers/{teacherId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // User accounts mapping
+    match /users/{userId} {
+      allow read: if isSignedIn() && (isOwner(userId) || isAdmin());
+      allow write: if isAdmin() || (isOwner(userId) && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['role']));
+    }
+
+    // Term-based schedules: Optimized grouping by teacher & week to minimize Firestore read counts
+    match /terms/{termId}/teacher_schedules/{scheduleId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin() || isHeadOfDepartment();
+    }
+
+    match /terms/{termId}/class_schedules/{scheduleId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin() || isHeadOfDepartment();
+    }
+
+    // Weekly Teaching Reports (Sổ báo giảng điện tử)
+    match /terms/{termId}/teaching_reports/{reportId} {
+      allow read: if isSignedIn() && (
+        isAdmin() || 
+        isHeadOfDepartment() || 
+        resource.data.teacherId == request.auth.uid
+      );
+      // Teachers can create and update their own draft/submitted reports
+      allow create: if isSignedIn() && request.resource.data.teacherId == request.auth.uid;
+      allow update: if isSignedIn() && (
+        (resource.data.teacherId == request.auth.uid && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['entries', 'status', 'submittedAt', 'notes'])) ||
+        (isHeadOfDepartment() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'approvedBy', 'approverComment', 'reviewedAt'])) ||
+        isAdmin()
+      );
+      allow delete: if isAdmin();
+    }
+
+    // In-app Notifications to teachers
+    match /notifications/{notificationId} {
+      allow read: if isSignedIn() && (resource.data.teacherId == request.auth.uid || isAdmin());
+      allow create: if isAdmin() || isHeadOfDepartment();
+      allow update: if isSignedIn() && resource.data.teacherId == request.auth.uid && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['isRead']);
+      allow delete: if isAdmin();
+    }
+
+    // System constraints config
+    match /system_rules/{ruleId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+  }
+}
