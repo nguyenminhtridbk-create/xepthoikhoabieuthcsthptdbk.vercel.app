@@ -14,8 +14,6 @@ import {
   executeSmartSwap,
   auditTimetable,
   auditDBKSchoolRules,
-  generateOfficialWeek3Slots,
-  generateOfficialWeek4Slots,
   DBK_OFFICIAL_RULES,
   DBKRuleAuditResult,
   SolverConfig,
@@ -29,6 +27,7 @@ import {
   FetEjectionChainStep,
 } from '../services/timetableSchedulerEngine';
 import { AppScheduleStorage } from '../services/appStorage';
+import { DBK_AVAILABLE_WEEKS, DBK_WEEKLY_SCHEDULES } from '../data/dbkWeeklyScheduleData';
 import {
   Sparkles,
   Cpu,
@@ -129,46 +128,17 @@ export const SmartScheduleStudio: React.FC<SmartScheduleStudioProps> = ({
     return auditTimetable(slots, targetWeekNum, teachers, classes, subjects, campuses);
   }, [slots, targetWeekNum, teachers, classes, subjects, campuses]);
 
-  // Audit results against 17 DBK School Rules & Week 3 Specifics
+  // Audit results against DBK school rules
   const ruleAuditResults = useMemo(() => {
     return auditDBKSchoolRules(slots, targetWeekNum, teachers, classes, subjects, campuses);
   }, [slots, targetWeekNum, teachers, classes, subjects, campuses]);
 
-  // Handle 1-Click Generate and Optimize Week 3 according to DBK official rules
-  const handleGenerateAndOptimizeWeek3 = () => {
-    const optimizedW3Slots = generateOfficialWeek3Slots(
-      slots,
-      teachers,
-      classes,
-      subjects,
-      campuses
-    );
-    const otherWeeks = slots.filter((s) => s.weekNumber !== 3);
-    const updated = [...otherWeeks, ...optimizedW3Slots];
-    onUpdateSlots(updated);
-    setTargetWeekNum(3);
+  const handleLoadSelectedWeek = () => {
+    const snapshot = DBK_WEEKLY_SCHEDULES[targetWeekNum];
+    if (!snapshot) return;
+    AppScheduleStorage.getInstance().loadWeekFromCode(targetWeekNum);
     setAppliedNotification(
-      `Đã khởi tạo & tối ưu hóa TKB Tuần 3 chuẩn 100% theo 17 quy tắc trường Đốc Binh Kiều (${optimizedW3Slots.length} tiết)! KHTN 8: 2 Lý - 2 Hóa; Thầy Thái Văn Tiến trực tiếp giảng dạy; Đã đáp ứng nguyện vọng của Cô Trang, Thầy Huy, Cô Diễm, Cô Giàu, Cô Lụa.`
-    );
-    setTimeout(() => setAppliedNotification(null), 5000);
-  };
-
-  // Handle 1-Click Generate and Optimize Week 4 with newest PCCM (8A9, 8A10 HĐTNHN to Thay Tien)
-  const handleGenerateAndOptimizeWeek4 = () => {
-    const optimizedW4Slots = generateOfficialWeek4Slots(
-      slots,
-      teachers,
-      classes,
-      subjects,
-      campuses
-    );
-    const otherWeeks = slots.filter((s) => s.weekNumber !== 4);
-    const updated = [...otherWeeks, ...optimizedW4Slots];
-    onUpdateSlots(updated);
-    setTargetWeekNum(4);
-    AppScheduleStorage.getInstance().updateWeek4Assignments();
-    setAppliedNotification(
-      `Đã khởi tạo & tối ưu hóa TKB Tuần 4 (${optimizedW4Slots.length} tiết) theo Phân công chuyên môn mới nhất! Đã chuyển 2 lớp 8A9, 8A10 (HĐTNHN) từ Thầy Phan Văn Tặt sang Thầy Thái Văn Tiến (Thầy Tiến đảm nhiệm 4 lớp: 8A7..8A10); 0 xung đột cứng; Tối thiểu xáo trộn (UniTime MPP).`
+      `Đã nạp TKB Tuần ${targetWeekNum} (${snapshot.slots.length} tiết) từ snapshot đã lưu trong code.`
     );
     setTimeout(() => setAppliedNotification(null), 6000);
   };
@@ -316,15 +286,6 @@ export const SmartScheduleStudio: React.FC<SmartScheduleStudioProps> = ({
             </div>
 
             <button
-              onClick={handleGenerateAndOptimizeWeek3}
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-linear-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white text-xs font-black rounded-xl shadow-lg shadow-emerald-500/20 transition-all border border-emerald-400/30"
-              title="Xếp tự động Tuần 3 tuân thủ đúng 100% tất cả 17 quy tắc cứng và nguyện vọng giáo viên"
-            >
-              <Zap className="w-4 h-4 text-amber-200 animate-bounce" />
-              <span>Xếp Chuẩn Tuần 3 (17 Quy Tắc)</span>
-            </button>
-
-            <button
               onClick={onNavigateToTimetable}
               className="inline-flex items-center gap-2 px-4 py-2.5 bg-white/15 hover:bg-white/25 text-white text-xs font-bold rounded-xl border border-white/20 transition-colors shadow-2xs"
             >
@@ -436,8 +397,8 @@ export const SmartScheduleStudio: React.FC<SmartScheduleStudioProps> = ({
                 </h2>
                 <p className="text-xs text-slate-500 max-w-2xl">
                   {targetWeekNum === 4
-                    ? 'Phân công chuyên môn mới: Thầy Phan Văn Tặt bàn giao 2 lớp 8A9, 8A10 (HĐTNHN) cho Thầy Thái Văn Tiến (Thầy Tiến phụ trách 4 lớp: 8A7..8A10, đủ chuẩn định mức). Ứng dụng thuật toán UniTime MPP (Xáo trộn tối thiểu) & FET ma trận bận rảnh O(1) đạt 0 xung đột cứng.'
-                    : 'Hệ thống kiểm tra tự động 17 quy tắc cứng, phân bổ chuyên biệt Tuần 3 (KHTN 8: 2 Lý - 2 Hóa; Thầy Thái Văn Tiến đi dạy lại) và thỏa mãn toàn bộ nguyện vọng mềm của giáo viên.'}
+                    ? 'Tuần đang chọn dùng snapshot riêng đã lưu trong code; nạp lại tuần sẽ chỉ thay dữ liệu của tuần đó.'
+                    : 'Chọn một tuần có snapshot trong code để xem, kiểm tra và quản lý phân công riêng của tuần.'}
                 </p>
               </div>
 
@@ -449,30 +410,19 @@ export const SmartScheduleStudio: React.FC<SmartScheduleStudioProps> = ({
                     onChange={(e) => setTargetWeekNum(Number(e.target.value))}
                     className="text-xs font-bold text-slate-800 bg-transparent focus:outline-hidden"
                   >
-                    <option value={1}>Tuần 1</option>
-                    <option value={2}>Tuần 2</option>
-                    <option value={3}>Tuần 3</option>
-                    <option value={4}>Tuần 4 (PCCM Mới)</option>
+                    {DBK_AVAILABLE_WEEKS.map((weekNumber) => (
+                      <option key={weekNumber} value={weekNumber}>Tuần {weekNumber}</option>
+                    ))}
                   </select>
                 </div>
 
-                {targetWeekNum === 4 ? (
-                  <button
-                    onClick={handleGenerateAndOptimizeWeek4}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs rounded-xl shadow-md shadow-blue-600/20 transition-all cursor-pointer"
-                  >
-                    <Zap className="w-4 h-4 text-amber-300 animate-pulse" />
-                    <span>Xếp Lại TKB Tuần 4 (UniTime MPP &amp; FET)</span>
-                  </button>
-                ) : (
-                  <button
-                    onClick={handleGenerateAndOptimizeWeek3}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs rounded-xl shadow-md shadow-emerald-600/20 transition-all cursor-pointer"
-                  >
-                    <Zap className="w-4 h-4 text-amber-300 animate-pulse" />
-                    <span>Xếp Lại TKB Tuần 3 Chuẩn 100% Quy Tắc</span>
-                  </button>
-                )}
+                <button
+                  onClick={handleLoadSelectedWeek}
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs rounded-xl shadow-md shadow-blue-600/20 transition-all cursor-pointer"
+                >
+                  <Zap className="w-4 h-4 text-amber-300" />
+                  <span>Nạp lại snapshot tuần {targetWeekNum}</span>
+                </button>
               </div>
             </div>
 

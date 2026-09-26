@@ -163,15 +163,22 @@ export function calculateTimetableQuality(
   overallScore: number;
   hardConflicts: number;
   totalGaps: number;
+  teacherWorkDays: number;
+  teacherSessions: number;
+  teacherCompactness: Map<string, { gaps: number; workDays: number; sessions: number }>;
   campusTravels: number;
   pedagogyScore: number;
   offDayScore: number;
 } {
   const teacherMap = new Map<string, Teacher>(teachers.map((t) => [t.id, t]));
+  const classMap = new Map<string, ClassRoom>(classes.map((c) => [c.id, c]));
   const subjectMap = new Map<string, Subject>(subjects.map((s) => [s.id, s]));
 
   let hardConflicts = 0;
   let totalGaps = 0;
+  let teacherWorkDays = 0;
+  let teacherSessions = 0;
+  const teacherCompactness = new Map<string, { gaps: number; workDays: number; sessions: number }>();
   let campusTravels = 0;
   let heavySlotViolations = 0;
   let offDayViolations = 0;
@@ -203,6 +210,22 @@ export function calculateTimetableQuality(
     if (matched.length > 1) hardConflicts += (matched.length - 1) * 20;
   });
 
+  for (const slot of slots) {
+    const className = classMap.get(slot.classId)?.name;
+    if (!className || !/^(6A[1-6]|7A[1-6])$/.test(className)) continue;
+    const shift = getSlotShiftAndPeriod(slot).shift;
+    const isExperientialSubject = slot.subjectId === 'sub_hdtn_cd' || slot.subjectId === 'sub_hdtn_lop';
+
+    if (className === '7A6') {
+      if ((shift === 'morning' && !isExperientialSubject) || (isExperientialSubject && shift !== 'morning')) {
+        hardConflicts += 20;
+      }
+      if (slot.subjectId === 'sub_gdtc' && shift !== 'afternoon') hardConflicts += 20;
+    } else if (shift === 'morning' && slot.subjectId !== 'sub_gdtc') {
+      hardConflicts += 20;
+    }
+  }
+
   // 2. Kiểm tra Tiết Trống (Gaps) & Di chuyển cơ sở của từng giáo viên theo ngày
   const teacherDayMap = new Map<string, PeriodSlot[]>();
   for (const s of slots) {
@@ -214,9 +237,13 @@ export function calculateTimetableQuality(
   }
 
   teacherDayMap.forEach((daySlots, key) => {
+    teacherWorkDays += 1;
     const [tId, dayStr] = key.split('_d');
     const day = Number(dayStr);
     const teacher = teacherMap.get(tId);
+    const compactness = teacherCompactness.get(tId) || { gaps: 0, workDays: 0, sessions: 0 };
+    compactness.workDays += 1;
+    teacherCompactness.set(tId, compactness);
 
     // Tính gaps và di chuyển cơ sở theo từng ca độc lập (Sáng riêng, Chiều riêng)
     (['morning', 'afternoon'] as const).forEach((shift) => {
@@ -224,12 +251,19 @@ export function calculateTimetableQuality(
         .filter((s) => getSlotShiftAndPeriod(s).shift === shift)
         .sort((a, b) => getSlotShiftAndPeriod(a).period - getSlotShiftAndPeriod(b).period);
 
+      if (sessionSlots.length > 0) {
+        teacherSessions += 1;
+        compactness.sessions += 1;
+      }
       if (sessionSlots.length > 1) {
         const periods = sessionSlots.map((s) => getSlotShiftAndPeriod(s).period);
         const minP = Math.min(...periods);
         const maxP = Math.max(...periods);
         const gaps = maxP - minP + 1 - periods.length;
-        if (gaps > 0) totalGaps += gaps;
+        if (gaps > 0) {
+          totalGaps += gaps;
+          compactness.gaps += gaps;
+        }
 
         // Di chuyển cơ sở trong cùng 1 ca
         const campuses = new Set(sessionSlots.map((s) => s.campusId));
@@ -267,6 +301,8 @@ export function calculateTimetableQuality(
   const penalty =
     hardConflicts * 50 +
     totalGaps * (weights.teacherGaps * 0.4) +
+    teacherWorkDays * (weights.teacherGaps * 0.2) +
+    teacherSessions * (weights.teacherGaps * 0.2) +
     campusTravels * (weights.campusTravel * 0.8) +
     heavySlotViolations * (weights.pedagogyDistribution * 0.2) +
     offDayViolations * (weights.teacherOffDay * 0.5);
@@ -279,6 +315,9 @@ export function calculateTimetableQuality(
     overallScore,
     hardConflicts,
     totalGaps,
+    teacherWorkDays,
+    teacherSessions,
+    teacherCompactness,
     campusTravels,
     pedagogyScore,
     offDayScore,
@@ -330,7 +369,7 @@ export async function runAutomatedScheduler(
   const mutableSlots: PeriodSlot[] = [];
 
   for (const s of currentSlots) {
-    if (s.isLocked || s.isFlagSalute || s.isClassMeeting || !targetClassIds.has(s.classId)) {
+    if (s.isLocked || s.isFlagSalute || s.isClassMeeting || s.isOppositeShift || !targetClassIds.has(s.classId)) {
       pinnedSlots.push(s);
     } else {
       mutableSlots.push(s);
@@ -379,6 +418,7 @@ export async function runAutomatedScheduler(
     );
 
     let bestScore = initialEval.overallScore;
+    let currentEval = initialEval;
     const maxIters = config.maxIterations || 400;
 
     // Vòng lặp tối ưu hóa (Tích hợp Simulated Annealing + UniTime CBS & MPP)
@@ -480,6 +520,24 @@ export async function runAutomatedScheduler(
             customWeights
           );
 
+          if (trialEval.hardConflicts > currentEval.hardConflicts) continue;
+
+          const compactnessWorsenedForTeacher = Array.from(
+            new Set([...currentEval.teacherCompactness.keys(), ...trialEval.teacherCompactness.keys()])
+          ).some((teacherId) => {
+            const current = currentEval.teacherCompactness.get(teacherId) || { gaps: 0, workDays: 0, sessions: 0 };
+            const trial = trialEval.teacherCompactness.get(teacherId) || { gaps: 0, workDays: 0, sessions: 0 };
+            return trial.gaps > current.gaps || trial.workDays > current.workDays || trial.sessions > current.sessions;
+          });
+          if (
+            trialEval.totalGaps > currentEval.totalGaps ||
+            trialEval.teacherWorkDays > currentEval.teacherWorkDays ||
+            trialEval.teacherSessions > currentEval.teacherSessions ||
+            compactnessWorsenedForTeacher
+          ) {
+            continue;
+          }
+
           // Phạt nếu vi phạm MPP (Minimal Perturbation Problem) khi bật chế độ này
           let adjustedScore = trialEval.overallScore;
           if (isMpp) {
@@ -496,6 +554,7 @@ export async function runAutomatedScheduler(
           // Metropolis criterion: luôn nhận cải thiện, xác suất nhận khi kém hơn giảm dần theo nhiệt độ
           if (delta > 0 || Math.random() < Math.exp(delta / (temperature * 2 + 0.01))) {
             currentPool = trialPool;
+            currentEval = trialEval;
             if (adjustedScore > bestScore) {
               bestScore = adjustedScore;
               bestSlots = JSON.parse(JSON.stringify(trialPool));
@@ -1936,7 +1995,7 @@ export function resolveAllCollisions(slots: PeriodSlot[]): void {
 
 /**
  * TỐI ƯU HÓA THỜI KHÓA BIỂU CHUẨN XÁC:
- * 1. Tiết trái buổi cho khối 6 & 7 (GDTC tại ĐBK, HĐTNHN tại Tân Kiều học vào Buổi Sáng với isOppositeShift: true)
+ * 1. Tiết trái buổi khối 6 & 7: GDTC sáng tại ĐBK, riêng 7A6 HĐTNHN sáng/GDTC chiều, HĐTNHN sáng tại Tân Kiều
  * 2. Toàn bộ tiết trống trong tuần của tất cả 53 lớp TẬP TRUNG 100% VÀO THỨ 5 (Thứ 2, 3, 4, 6, 7 học đủ 5 tiết)
  * 3. 0 xung đột giáo viên và xóa toàn bộ mã phòng
  */
@@ -1951,7 +2010,7 @@ export function prepareOptimalWeek2Slots(inputSlots: PeriodSlot[]): PeriodSlot[]
     return slots;
   }
 
-  // 1. Phân bố GDTC sáng cho các lớp ĐBK (6A1-6A6, 7A1-7A6)
+  // 1. Phân bố GDTC sáng cho các lớp ĐBK (6A1-6A6, 7A1-7A5)
   const gdtcConfig = [
     { classId: 'cls_6a1', day: 2, p1: 2, p2: 3, teacherId: 'gv_le_van_nguyen' },
     { classId: 'cls_6a2', day: 3, p1: 1, p2: 2, teacherId: 'gv_le_van_nguyen' },
@@ -1966,7 +2025,6 @@ export function prepareOptimalWeek2Slots(inputSlots: PeriodSlot[]): PeriodSlot[]
 
     { classId: 'cls_7a4', day: 2, p1: 2, p2: 3, teacherId: 'gv_le_ngoc_an' },
     { classId: 'cls_7a5', day: 3, p1: 1, p2: 2, teacherId: 'gv_le_ngoc_an' },
-    { classId: 'cls_7a6', day: 6, p1: 1, p2: 2, teacherId: 'gv_le_ngoc_an' },
   ];
 
   for (const cfg of gdtcConfig) {
@@ -1988,7 +2046,7 @@ export function prepareOptimalWeek2Slots(inputSlots: PeriodSlot[]): PeriodSlot[]
     }
   }
 
-  // 2. Phân bố HĐTNHN sáng cho các lớp Tân Kiều (6A7-6A10, 7A7-7A9)
+  // 2. Phân bố HĐTNHN sáng cho Tân Kiều và riêng lớp 7A6
   const hdtnConfig = [
     { classId: 'cls_6a7', day: 7, p1: 1, p2: 2, teacherId: 'gv_nguyen_thi_kim_sang' },
     { classId: 'cls_6a8', day: 7, p1: 1, p2: 2, teacherId: 'gv_le_thi_ngoc_diep' },
@@ -1997,6 +2055,7 @@ export function prepareOptimalWeek2Slots(inputSlots: PeriodSlot[]): PeriodSlot[]
     { classId: 'cls_7a7', day: 7, p1: 1, p2: 2, teacherId: 'gv_tran_kim_phuong' },
     { classId: 'cls_7a8', day: 7, p1: 1, p2: 2, teacherId: 'gv_pham_thi_my_chau' },
     { classId: 'cls_7a9', day: 7, p1: 1, p2: 2, teacherId: 'gv_le_van_chinh' },
+    { classId: 'cls_7a6', day: 2, p1: 2, p2: 3, teacherId: 'gv_tran_thi_cam' },
   ];
 
   for (const cfg of hdtnConfig) {

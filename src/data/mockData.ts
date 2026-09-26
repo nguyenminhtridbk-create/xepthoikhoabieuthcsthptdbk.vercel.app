@@ -511,6 +511,22 @@ export const CLASSES: ClassRoom[] = [
 
 export const INITIAL_RULES: ConstraintRule[] = [
   {
+    id: 'rule_grade67_opposite_shift_gdtc',
+    code: 'GRADE67_OPPOSITE_SHIFT_GDTC',
+    name: 'GDTC trái buổi khối 6-7; ngoại lệ HĐTNHN 7A6 (Hard)',
+    type: 'hard',
+    description: '6A1-6A6 và 7A1-7A5 học GDTC trái buổi vào buổi sáng. Riêng 7A6 học HĐTNHN buổi sáng và GDTC buổi chiều. Quy tắc cố định suốt năm học.',
+    isActive: true,
+  },
+  {
+    id: 'rule_minimize_teacher_gaps',
+    code: 'MINIMIZE_TEACHER_GAPS',
+    name: 'Dồn tiết giáo viên, hạn chế tiết trống và ngày dạy rải rác (Hard)',
+    type: 'hard',
+    description: 'Khi tối ưu lịch, không làm tăng tiết trống hoặc số ngày đứng lớp; ưu tiên dồn nhiều tiết liền nhau trong cùng buổi và giảm số buổi, số ngày phải đến trường.',
+    isActive: true,
+  },
+  {
     id: 'rule_no_teacher_collision',
     code: 'NO_TEACHER_COLLISION',
     name: 'Giáo viên không trùng lịch cùng một tiết (Hard)',
@@ -559,15 +575,6 @@ export const INITIAL_RULES: ConstraintRule[] = [
     type: 'hard',
     description: 'Tiết Chào cờ đầu tuần và Sinh hoạt cuối tuần được cố định cho toàn bộ các lớp.',
     isActive: true,
-  },
-  {
-    id: 'rule_minimize_teacher_gaps',
-    code: 'MINIMIZE_TEACHER_GAPS',
-    name: 'Tối ưu hóa và giảm thiểu tiết trống của giáo viên (Soft)',
-    type: 'soft',
-    description: 'Hạn chế tình trạng giáo viên bị trống tiết xen kẽ (VD: dạy tiết 1, tiết 4, bỏ trống tiết 2, 3).',
-    isActive: true,
-    weight: 9,
   },
   {
     id: 'rule_teacher_off_day',

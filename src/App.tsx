@@ -7,7 +7,6 @@ import {
   AppNotification,
   VietSchoolImportResult,
   TeacherAssignmentItem,
-  Week3GenerationOptions,
 } from './types';
 import {
   DBK_CAMPUSES,
@@ -28,8 +27,9 @@ import { IntegratedSubjectsManager } from './components/IntegratedSubjectsManage
 import { TeachingReportManager } from './components/TeachingReportManager';
 import { NotificationCenter } from './components/NotificationCenter';
 import { VietschoolImporterModal } from './components/VietschoolImporterModal';
-import { Week3SchedulerModal } from './components/Week3SchedulerModal';
 import { SmartScheduleStudio } from './components/SmartScheduleStudio';
+import { Week4TeachingAssignmentsTab } from './components/Week4TeachingAssignmentsTab';
+import { DBK_WEEKLY_SCHEDULES } from './data/dbkWeeklyScheduleData';
 import { Sparkles } from 'lucide-react';
 
 export default function App() {
@@ -37,16 +37,17 @@ export default function App() {
 
   // System states
   const [currentRole, setCurrentRole] = useState<UserRole>('admin');
-  const [currentWeek, setCurrentWeek] = useState<number>(2); // Mặc định mở Tuần 2 theo dữ liệu trường
+  const [currentWeek, setCurrentWeek] = useState<number>(() => storage.getLatestAvailableWeek());
+  const availableWeeks = useMemo(() => storage.getAvailableWeeks(), [storage]);
   const [selectedCampusId, setSelectedCampusId] = useState<string>('all');
   const [activeTab, setActiveTab] = useState<
-    'timetable' | 'scheduler' | 'pcgd' | 'khtn_lsdl' | 'reports' | 'constraints' | 'notifications'
+    'timetable' | 'scheduler' | 'pcgd' | 'week4_assignments' | 'khtn_lsdl' | 'reports' | 'constraints' | 'notifications'
   >('timetable');
 
   // Core Data
   const [slots, setSlots] = useState<PeriodSlot[]>(() => storage.getSlots());
   const [assignments, setAssignments] = useState<TeacherAssignmentItem[]>(() =>
-    storage.getTeachingAssignments()
+    storage.getTeachingAssignments(currentWeek)
   );
   const [rules, setRules] = useState<ConstraintRule[]>(() => storage.getRules());
   const [reports, setReports] = useState<TeachingReport[]>(() => storage.getReports());
@@ -56,19 +57,18 @@ export default function App() {
 
   // Modals
   const [isVietSchoolOpen, setIsVietSchoolOpen] = useState(false);
-  const [isWeek3ModalOpen, setIsWeek3ModalOpen] = useState(false);
 
   // Sync with Storage events
   useEffect(() => {
     const unsubscribe = storage.subscribe(() => {
       setSlots(storage.getSlots());
-      setAssignments(storage.getTeachingAssignments());
+      setAssignments(storage.getTeachingAssignments(currentWeek));
       setRules(storage.getRules());
       setReports(storage.getReports());
       setNotifications(storage.getNotifications());
     });
     return () => unsubscribe();
-  }, [storage]);
+  }, [storage, currentWeek]);
 
   // Conflict Detection Engine
   const validationSummary = useMemo(() => {
@@ -92,6 +92,13 @@ export default function App() {
     () => notifications.filter((n) => !n.isRead).length,
     [notifications]
   );
+  const weekSummary = useMemo(() => {
+    const weekSlots = slots.filter((slot) => slot.weekNumber === currentWeek);
+    return {
+      teacherCount: new Set(weekSlots.map((slot) => slot.teacherId)).size,
+      periodSlotCount: weekSlots.length,
+    };
+  }, [slots, currentWeek]);
 
   // Handlers for Timetable Slots
   const handleUpdateSlot = (updatedSlot: PeriodSlot) => {
@@ -112,11 +119,16 @@ export default function App() {
 
   // Handlers for Teaching Assignments (PCGD)
   const handleUpdateAssignment = (item: TeacherAssignmentItem) => {
-    storage.updateTeachingAssignment(item);
+    storage.updateTeachingAssignment(item, currentWeek);
   };
 
   const handleDeleteAssignment = (id: string) => {
-    storage.deleteTeachingAssignment(id);
+    storage.deleteTeachingAssignment(id, currentWeek);
+  };
+
+  const handleWeekChange = (weekNumber: number) => {
+    setCurrentWeek(weekNumber);
+    setAssignments(storage.getTeachingAssignments(weekNumber));
   };
 
   // Handlers for Constraint Rules
@@ -145,7 +157,7 @@ export default function App() {
       timestamp: new Date().toISOString(),
       school: 'Trường THCS & THPT Đốc Binh Kiều',
       slots: storage.getSlots(),
-      assignments: storage.getTeachingAssignments(),
+      assignments: storage.getAllTeachingAssignments(),
       rules: storage.getRules(),
       reports: storage.getReports(),
     };
@@ -158,13 +170,6 @@ export default function App() {
     a.download = `TKB_THCS_THPT_DocBinhKieu_DuPhong_${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
-  };
-
-  // Handler for Generating Week 3
-  const handleGenerateWeek3 = (options: Week3GenerationOptions) => {
-    storage.generateWeek3Schedule(options);
-    setCurrentWeek(options.targetWeek);
-    setActiveTab('timetable');
   };
 
   // Handler for VietSchool Import Success
@@ -205,16 +210,18 @@ export default function App() {
         currentRole={currentRole}
         onRoleChange={setCurrentRole}
         currentWeek={currentWeek}
-        onWeekChange={setCurrentWeek}
+        onWeekChange={handleWeekChange}
+        availableWeeks={availableWeeks}
         selectedCampusId={selectedCampusId}
         onCampusChange={setSelectedCampusId}
         campuses={DBK_CAMPUSES}
+        teacherCount={weekSummary.teacherCount}
+        periodSlotCount={weekSummary.periodSlotCount}
         hardConflictsCount={hardConflictsCount}
         softWarningsCount={softWarningsCount}
         unreadNotificationsCount={unreadNotificationsCount}
         activeTab={activeTab}
         onTabChange={setActiveTab}
-        onOpenWeek3Modal={() => setIsWeek3ModalOpen(true)}
         onOpenVietSchoolModal={() => setIsVietSchoolOpen(true)}
         onExportExcel={handleExportExcel}
       />
@@ -267,6 +274,20 @@ export default function App() {
           />
         )}
 
+        {activeTab === 'week4_assignments' && (
+          <Week4TeachingAssignmentsTab
+            assignments={assignments}
+            teachers={DBK_TEACHERS}
+            classes={DBK_CLASSES}
+            campuses={DBK_CAMPUSES}
+            teacherWorkloads={DBK_WEEKLY_SCHEDULES[currentWeek]?.teacherWorkloads || []}
+            ruleViolations={DBK_WEEKLY_SCHEDULES[currentWeek]?.ruleViolations || []}
+            sourceFiles={DBK_WEEKLY_SCHEDULES[currentWeek]?.sourceFiles || []}
+            weekNumber={currentWeek}
+            sourceDate={DBK_WEEKLY_SCHEDULES[currentWeek]?.sourceDate || ''}
+          />
+        )}
+
         {activeTab === 'khtn_lsdl' && (
           <IntegratedSubjectsManager
             subjects={DBK_SUBJECTS}
@@ -274,7 +295,7 @@ export default function App() {
             classes={DBK_CLASSES}
             slots={slots}
             currentWeek={currentWeek}
-            onWeekChange={setCurrentWeek}
+            onWeekChange={handleWeekChange}
           />
         )}
 
@@ -329,13 +350,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* Week 3 Scheduler Modal */}
-      <Week3SchedulerModal
-        isOpen={isWeek3ModalOpen}
-        onClose={() => setIsWeek3ModalOpen(false)}
-        onGenerate={handleGenerateWeek3}
-      />
 
       {/* VietSchool Importer Modal */}
       <VietschoolImporterModal

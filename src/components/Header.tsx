@@ -19,9 +19,7 @@ import {
   Eye,
   EyeOff,
   ChevronDown,
-  Wifi,
-  BarChart3,
-  Zap,
+  ClipboardList,
 } from 'lucide-react';
 import { UserRole, Campus } from '../types';
 import { triggerPrintWindow } from '../services/exportService';
@@ -32,15 +30,17 @@ interface HeaderProps {
   onRoleChange: (role: UserRole) => void;
   currentWeek: number;
   onWeekChange: (week: number) => void;
+  availableWeeks: number[];
   selectedCampusId: string;
   onCampusChange: (campusId: string) => void;
   campuses: Campus[];
+  teacherCount: number;
+  periodSlotCount: number;
   hardConflictsCount: number;
   softWarningsCount: number;
   unreadNotificationsCount: number;
-  activeTab: 'timetable' | 'scheduler' | 'pcgd' | 'khtn_lsdl' | 'reports' | 'constraints' | 'notifications';
-  onTabChange: (tab: 'timetable' | 'scheduler' | 'pcgd' | 'khtn_lsdl' | 'reports' | 'constraints' | 'notifications') => void;
-  onOpenWeek3Modal: () => void;
+  activeTab: 'timetable' | 'scheduler' | 'pcgd' | 'week4_assignments' | 'khtn_lsdl' | 'reports' | 'constraints' | 'notifications';
+  onTabChange: (tab: 'timetable' | 'scheduler' | 'pcgd' | 'week4_assignments' | 'khtn_lsdl' | 'reports' | 'constraints' | 'notifications') => void;
   onOpenVietSchoolModal: () => void;
   onExportExcel: () => void;
 }
@@ -50,15 +50,17 @@ export const Header: React.FC<HeaderProps> = ({
   onRoleChange,
   currentWeek,
   onWeekChange,
+  availableWeeks,
   selectedCampusId,
   onCampusChange,
   campuses,
+  teacherCount,
+  periodSlotCount,
   hardConflictsCount,
   softWarningsCount,
   unreadNotificationsCount,
   activeTab,
   onTabChange,
-  onOpenWeek3Modal,
   onOpenVietSchoolModal,
   onExportExcel,
 }) => {
@@ -110,10 +112,11 @@ export const Header: React.FC<HeaderProps> = ({
               onChange={(e) => onWeekChange(Number(e.target.value))}
               className="bg-transparent text-amber-300 font-extrabold focus:outline-hidden cursor-pointer text-xs"
             >
-              <option value={1} className="bg-slate-900 text-white">Tuần 1</option>
-              <option value={2} className="bg-slate-900 text-white">Tuần 2</option>
-              <option value={3} className="bg-slate-900 text-white">Tuần 3</option>
-              <option value={4} className="bg-slate-900 text-amber-300 font-bold">Tuần 4 (PCCM Mới)</option>
+              {availableWeeks.map((weekNumber) => (
+                <option key={weekNumber} value={weekNumber} className="bg-slate-900 text-amber-300 font-bold">
+                  Tuần {weekNumber}{weekNumber === 4 ? ' (VietSchool)' : ''}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -225,7 +228,6 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
       </div>
 
-      {/* 2. SUB-BAR: Chỉ số thống kê (101 GV, 53 Lớp, 100% Gán tiết, Định mức 100%) y hệt Screenshot */}
       <div className="bg-[#110f36] border-t border-[#231e61] px-4 sm:px-6 lg:px-8 py-1.5 text-[11px] sm:text-xs text-slate-300">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
           {/* Left stats */}
@@ -233,7 +235,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center gap-1.5">
               <Users className="w-3.5 h-3.5 text-indigo-400" />
               <span>
-                Giáo viên: <strong className="text-white font-bold">101 GV</strong>
+                Giáo viên: <strong className="text-white font-bold">{teacherCount} GV</strong>
               </span>
             </div>
             <div className="flex items-center gap-1.5">
@@ -243,22 +245,20 @@ export const Header: React.FC<HeaderProps> = ({
               </span>
             </div>
             <div className="flex items-center gap-1.5">
-              <Wifi className="w-3.5 h-3.5 text-emerald-400" />
+              <Layers className="w-3.5 h-3.5 text-emerald-400" />
               <span>
-                Tiến độ gán tiết: <strong className="text-emerald-400 font-bold">100%</strong>
+                Tiết trong TKB: <strong className="text-emerald-400 font-bold">{periodSlotCount.toLocaleString('vi-VN')}</strong>
               </span>
             </div>
           </div>
 
-          {/* Right stats: TỔNG ĐỊNH MỨC + Thanh tiến độ Cyan */}
-          <div className="flex items-center gap-2.5">
-            <span className="font-extrabold uppercase text-[10px] text-slate-400 tracking-wider">
-              TỔNG ĐỊNH MỨC
-            </span>
-            <div className="w-24 sm:w-32 h-2.5 bg-slate-800 rounded-full overflow-hidden border border-slate-700">
-              <div className="h-full bg-gradient-to-r from-teal-400 to-cyan-400 rounded-full w-full"></div>
-            </div>
-            <span className="text-cyan-400 font-extrabold text-xs">100%</span>
+          <div className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400">
+            Nguồn lịch <span className="ml-1 text-emerald-300">Code · Tuần {currentWeek}</span>
+                        {availableWeeks.map((weekNumber) => (
+                          <option key={weekNumber} value={weekNumber} className="bg-slate-900 text-amber-300 font-bold">
+                            Tuần {weekNumber}{weekNumber === 4 ? ' (VietSchool)' : ''}
+                          </option>
+                        ))}
           </div>
         </div>
       </div>
@@ -302,6 +302,18 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <Users className="w-3.5 h-3.5" />
               <span>Phân Công GD</span>
+            </button>
+
+            <button
+              onClick={() => onTabChange('week4_assignments')}
+              className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
+                activeTab === 'week4_assignments'
+                  ? 'bg-emerald-600 text-white font-bold'
+                  : 'text-emerald-200 hover:text-white hover:bg-white/10'
+              }`}
+            >
+              <ClipboardList className="w-3.5 h-3.5" />
+              <span>Phân công chuyên môn</span>
             </button>
 
             <button
@@ -360,26 +372,16 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Right side: Tools & Actions */}
           <div className="flex items-center flex-wrap gap-2 text-xs">
-            {/* Quick Button Xếp TKB Tuần 3 */}
-            <button
-              onClick={onOpenWeek3Modal}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white font-bold rounded-lg shadow-sm transition-all cursor-pointer"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-              <span>Xếp TKB Tuần 3</span>
-            </button>
-
-            {/* Quick Button Xếp TKB Tuần 4 (PCCM Mới) */}
+            {/* Nạp lại TKB tuần 4 từ dữ liệu VietSchool đã lưu trong code */}
             <button
               onClick={() => {
-                AppScheduleStorage.getInstance().generateWeek4Schedule();
-                onWeekChange(4);
+                AppScheduleStorage.getInstance().loadWeekFromCode(currentWeek);
               }}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-extrabold rounded-lg shadow-sm transition-all cursor-pointer"
-              title="Khởi tạo & Tối ưu TKB Tuần 4 theo phân công chuyên môn mới nhất (Thầy Tiến dạy 8A9, 8A10)"
+              title={`Nạp lại TKB tuần ${currentWeek} từ snapshot trong code`}
             >
-              <Zap className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
-              <span>Xếp TKB Tuần 4 (Mới)</span>
+              <ClipboardList className="w-3.5 h-3.5 text-amber-300" />
+              <span>Nạp TKB tuần {currentWeek}</span>
             </button>
 
             {/* VietSchool import */}

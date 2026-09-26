@@ -137,9 +137,10 @@ export const ConstraintManager: React.FC<ConstraintManagerProps> = ({
                       type="checkbox"
                       checked={rule.isActive}
                       onChange={() => onToggleRule(rule.code)}
+                      disabled={rule.code === 'GRADE67_OPPOSITE_SHIFT_GDTC' || rule.code === 'MINIMIZE_TEACHER_GAPS'}
                       className="sr-only peer"
                     />
-                    <div className="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-rose-600"></div>
+                    <div className="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-rose-600 peer-disabled:cursor-not-allowed peer-disabled:opacity-60"></div>
                   </label>
                 </div>
               ))}

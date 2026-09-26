@@ -101,7 +101,7 @@ export interface PeriodSlot {
   isFlagSalute?: boolean; // Tiết Chào cờ
   isClassMeeting?: boolean; // Tiết Sinh hoạt lớp
   isLocked?: boolean; // Khóa không cho thuật toán tự đổi
-  isOppositeShift?: boolean; // Tiết học trái buổi (HĐTNHN Tân Kiều hoặc GDTC ĐBK)
+  isOppositeShift?: boolean; // Tiết học trái buổi; 7A6 học HĐTNHN sáng và GDTC chiều
   note?: string;
 }
 

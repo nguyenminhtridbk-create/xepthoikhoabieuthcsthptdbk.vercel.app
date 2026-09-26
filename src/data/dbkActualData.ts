@@ -111,7 +111,7 @@ export const DBK_CLASSES: ClassRoom[] = [
   { id: 'cls_12cb4', name: '12CB4', grade: 12, gradeLevel: 'THPT', campusId: 'campus_main', shift: 'morning', homeroomTeacherId: 'gv_nguyen_thi_be_trang', studentCount: 40 },
   { id: 'cls_12cb5', name: '12CB5', grade: 12, gradeLevel: 'THPT', campusId: 'campus_main', shift: 'morning', homeroomTeacherId: 'gv_trinh_van_son', studentCount: 42 },
 
-  // Khối 6 (Điểm ĐBK & Tân Kiều - Buổi Chiều, 2 tiết HĐTNHN Sáng)
+  // Khối 6 học chiều; ĐBK học GDTC trái buổi sáng, Tân Kiều học HĐTNHN trái buổi sáng.
   { id: 'cls_6a1', name: '6A1', grade: 6, gradeLevel: 'THCS', campusId: 'campus_dbk', shift: 'afternoon', homeroomTeacherId: 'gv_ho_thi_ngoc_tai', studentCount: 38 },
   { id: 'cls_6a2', name: '6A2', grade: 6, gradeLevel: 'THCS', campusId: 'campus_dbk', shift: 'afternoon', homeroomTeacherId: 'gv_nguyen_thi_tham', studentCount: 37 },
   { id: 'cls_6a3', name: '6A3', grade: 6, gradeLevel: 'THCS', campusId: 'campus_dbk', shift: 'afternoon', homeroomTeacherId: 'gv_bui_kim_phuong', studentCount: 39 },
@@ -123,7 +123,7 @@ export const DBK_CLASSES: ClassRoom[] = [
   { id: 'cls_6a9', name: '6A9', grade: 6, gradeLevel: 'THCS', campusId: 'campus_tk', shift: 'afternoon', homeroomTeacherId: 'gv_nguyen_thi_ngoc_diem', studentCount: 36 },
   { id: 'cls_6a10', name: '6A10', grade: 6, gradeLevel: 'THCS', campusId: 'campus_tk', shift: 'afternoon', homeroomTeacherId: 'gv_nguyen_thi_lua', studentCount: 35 },
 
-  // Khối 7 (Điểm ĐBK & Tân Kiều - Buổi Chiều, 2 tiết HĐTNHN Sáng)
+  // Khối 7 học chiều; ĐBK 7A1-7A5 học GDTC sáng, riêng 7A6 HĐTNHN sáng; Tân Kiều học HĐTNHN sáng.
   { id: 'cls_7a1', name: '7A1', grade: 7, gradeLevel: 'THCS', campusId: 'campus_dbk', shift: 'afternoon', homeroomTeacherId: 'gv_nguyen_van_ngoan', studentCount: 38 },
   { id: 'cls_7a2', name: '7A2', grade: 7, gradeLevel: 'THCS', campusId: 'campus_dbk', shift: 'afternoon', homeroomTeacherId: 'gv_mai_phuoc_loc', studentCount: 37 },
   { id: 'cls_7a3', name: '7A3', grade: 7, gradeLevel: 'THCS', campusId: 'campus_dbk', shift: 'afternoon', homeroomTeacherId: 'gv_nguyen_quoc_nguyen', studentCount: 39 },

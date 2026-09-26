@@ -32,6 +32,7 @@ export function detectAllConflicts(
   const teacherMap = new Map<string, Teacher>(teachers.map((t) => [t.id, t]));
   const classMap = new Map<string, ClassRoom>(classes.map((c) => [c.id, c]));
   const campusMap = new Map<string, Campus>(campuses.map((cp) => [cp.id, cp]));
+  const subjectMap = new Map<string, Subject>(_subjects.map((subject) => [subject.id, subject]));
 
   // Lọc các slot của tuần hiện tại
   const currentWeekSlots = slots.filter((s) => s.weekNumber === weekNumber);
@@ -117,10 +118,50 @@ export function detectAllConflicts(
     });
   }
 
-  // 3. ĐÃ LOẠI BỎ HOÀN TOÀN QUY TẮC NO_ROOM_COLLISION THEO YÊU CẦU CỦA NGƯỜI DÙNG:
+  // 3. HARD RULE: Môn trái buổi khối 6-7; riêng 7A6 học HĐTNHN sáng, GDTC chiều.
+  const isGrade67OppositeShiftActive = rules.find((r) => r.code === 'GRADE67_OPPOSITE_SHIFT_GDTC')?.isActive ?? true;
+  if (isGrade67OppositeShiftActive) {
+    for (const slot of currentWeekSlots) {
+      const className = classMap.get(slot.classId)?.name;
+      if (!className) continue;
+      const shift = getSlotShiftAndPeriod(slot).shift;
+      const isHDTN = slot.subjectId === 'sub_hdtn_cd' || slot.subjectId === 'sub_hdtn_lop';
+      const isSpecial7A6 = className === '7A6';
+      const isGrade67OppositeShiftClass = /^(6A[1-6]|7A[1-5])$/.test(className);
+      let description = '';
+
+      if (isSpecial7A6) {
+        if (shift === 'morning' && !isHDTN) {
+          description = 'Riêng 7A6 học HĐTNHN buổi sáng và GDTC buổi chiều.';
+        } else if (shift === 'afternoon' && isHDTN) {
+          description = 'Riêng 7A6 học HĐTNHN buổi sáng, không xếp HĐTNHN vào buổi chiều.';
+        }
+      } else if (isGrade67OppositeShiftClass && shift === 'morning' && slot.subjectId !== 'sub_gdtc') {
+        description = 'Tiết trái buổi của lớp này phải là GDTC buổi sáng.';
+      }
+
+      if (!description) continue;
+      const period = getSlotShiftAndPeriod(slot).period;
+      conflicts.push({
+        id: `conflict_grade67_opposite_shift_${slot.id}`,
+        type: 'hard_error',
+        ruleCode: 'GRADE67_OPPOSITE_SHIFT_GDTC',
+        title: `Sai môn trái buổi: ${className}`,
+        description: `${className}, Thứ ${slot.dayOfWeek}, ${shift === 'morning' ? 'sáng' : 'chiều'} tiết ${period}: ${subjectMap.get(slot.subjectId)?.name || slot.subjectId}. ${description}`,
+        dayOfWeek: slot.dayOfWeek,
+        periodNumber: slot.periodNumber,
+        affectedTeacherIds: slot.teacherId ? [slot.teacherId] : [],
+        affectedClassIds: [slot.classId],
+        affectedCampuses: [slot.campusId],
+        slotIds: [slot.id],
+      });
+    }
+  }
+
+  // 4. ĐÃ LOẠI BỎ HOÀN TOÀN QUY TẮC NO_ROOM_COLLISION THEO YÊU CẦU CỦA NGƯỜI DÙNG:
   // Nhà trường không quản lý và không xếp phòng học.
 
-  // 4. HARD RULE: CAMPUS_TRAVEL_GAP (Di chuyển giữa các điểm trường TRONG CÙNG MỘT BUỔI)
+  // 5. HARD RULE: CAMPUS_TRAVEL_GAP (Di chuyển giữa các điểm trường TRONG CÙNG MỘT BUỔI)
   const campusTravelIssues: { teacherId: string; teacherName: string; day: number; fromCampus: string; toCampus: string }[] = [];
   const isCampusTravelActive = rules.find((r) => r.code === 'CAMPUS_TRAVEL_GAP')?.isActive ?? true;
   if (isCampusTravelActive) {
